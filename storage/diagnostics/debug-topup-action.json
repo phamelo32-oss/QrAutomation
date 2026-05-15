@@ -1,0 +1,730 @@
+{
+  "before": {
+    "url": "https://e66fun.com/#/sd-topup",
+    "amountCount": 1,
+    "amountValue": "",
+    "enableDisplay": "none",
+    "disableDisplay": "flex"
+  },
+  "afterFill": {
+    "url": "https://e66fun.com/#/sd-topup",
+    "amountValue": "200",
+    "enableDisplay": "flex",
+    "disableDisplay": "none",
+    "enableText": "Depósito"
+  },
+  "clickError": null,
+  "afterClick": {
+    "url": "https://e66fun.com/#/sd-topup",
+    "bodyText": "Depósito\nCanal de pagamento：\nPIX-1\nPIX-2\nBônus resgatável após 1x faturamento\n200\nR$\nR$ 10\nR$ 30\nR$ 50\nR$ 100\nR$ 500\nR$ 1000\nR$ 5000\nR$ 10000\nR$ 15000\nDepósito",
+    "candidates": [
+      {
+        "tag": "img",
+        "cls": null,
+        "id": null,
+        "type": null,
+        "value": null,
+        "text": null,
+        "src": "static/images/cv3d1/syscom/navv2/navv2_navbg.png"
+      },
+      {
+        "tag": "img",
+        "cls": "img top-nav-leftimg",
+        "id": null,
+        "type": null,
+        "value": null,
+        "text": null,
+        "src": "static/images/cv3d1/syscom/navv2/navv2_icon_back.png"
+      },
+      {
+        "tag": "img",
+        "cls": null,
+        "id": null,
+        "type": null,
+        "value": null,
+        "text": null,
+        "src": "static/images/cv3d1/syscom/commonv2/0051_tips_jianbain.png"
+      },
+      {
+        "tag": "img",
+        "cls": "img",
+        "id": null,
+        "type": null,
+        "value": null,
+        "text": null,
+        "src": "static/images/cv3d1/syscom/commonv2/deposit_tips.png"
+      },
+      {
+        "tag": "img",
+        "cls": "sdcommon-btn-frame",
+        "id": null,
+        "type": null,
+        "value": null,
+        "text": null,
+        "src": "static/images/cv3d1/syscom/commonv2/inputv2_long_focus.png"
+      },
+      {
+        "tag": "img",
+        "cls": "sdcommon-btn-frame",
+        "id": null,
+        "type": null,
+        "value": null,
+        "text": null,
+        "src": "static/images/cv3d1/syscom/commonv2/inputv2_long_error.png"
+      },
+      {
+        "tag": "img",
+        "cls": "sdcommon-btn-frame",
+        "id": null,
+        "type": null,
+        "value": null,
+        "text": null,
+        "src": "static/images/cv3d1/syscom/commonv2/inputv2_long_focus.png"
+      },
+      {
+        "tag": "input",
+        "cls": "input",
+        "id": "input-amount",
+        "type": "number",
+        "value": "200",
+        "text": null,
+        "src": null
+      },
+      {
+        "tag": "img",
+        "cls": null,
+        "id": null,
+        "type": null,
+        "value": null,
+        "text": null,
+        "src": "static/images/cv3d1/syscom/commonv2/0208_Close_bai.png"
+      },
+      {
+        "tag": "img",
+        "cls": null,
+        "id": null,
+        "type": null,
+        "value": null,
+        "text": null,
+        "src": "static/images/cv3d1/syscom/commonv2/0208_Close_bai.png"
+      },
+      {
+        "tag": "img",
+        "cls": "sdcommon-btn-frame",
+        "id": null,
+        "type": null,
+        "value": null,
+        "text": null,
+        "src": "static/images/cv3d1/syscom/commonv2/btnv2_short_disable.png"
+      },
+      {
+        "tag": "img",
+        "cls": "sdcommon-btn-frame",
+        "id": null,
+        "type": null,
+        "value": null,
+        "text": null,
+        "src": "static/images/cv3d1/syscom/commonv2/btnv2_short_enable.png"
+      },
+      {
+        "tag": "div",
+        "cls": "van-toast van-toast--middle van-toast--loading",
+        "id": null,
+        "type": null,
+        "value": null,
+        "text": "Carregando...",
+        "src": null
+      },
+      {
+        "tag": "div",
+        "cls": "van-loading van-loading--circular van-toast__loading",
+        "id": null,
+        "type": null,
+        "value": null,
+        "text": null,
+        "src": null
+      },
+      {
+        "tag": "div",
+        "cls": "van-toast__text",
+        "id": null,
+        "type": null,
+        "value": null,
+        "text": "Carregando...",
+        "src": null
+      }
+    ]
+  },
+  "responses": [
+    {
+      "url": "https://e66fun.com/",
+      "status": 200,
+      "contentType": "text/html; charset=utf-8",
+      "bodyPreview": "<!DOCTYPE html>\n<html>\n  <head>\n    <meta charset=\"utf-8\">\n    <meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\">\n    <meta name=\"viewport\" content=\"width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover\">\n    <meta name=\"theme-color\" content=\"#1B0A24\">\n    \n    \n    <meta property=\"og:title\" content=\"E66 oferece o melhor dos populares jogos.Venha comigo, torne-se o próximo milionário!\">\n    <meta name=\"description\" content=\"E66 oferece o melhor dos populares jogos.Venha comigo, torne-se o próximo milionário!\">\n    <meta property=\"og:description\" content=\"E66 oferece o melhor dos populares jogos.Venha comigo, torne-se o próximo milionário!\">\n    <meta property=\"og:image\" content=\"https://oss.goodofs.com/images/share/49ag1761278033318990.jpg\">\n    <meta property=\"og:image:alt\" content=\"E66.COM\">\n    <meta property=\"og:image:secure_url\" content=\"https://oss.goodofs.com/images/share/49ag1761278033318990.jpg\">\n    <meta property=\"og:site_name\" content=\"E66.COM\">\n    <meta property=\"og:type\" content=\"website\">\n    <meta name=\"twitter:card\" content=\"summary_large_image\">\n    <meta name=\"twitter:title\" content=\"E66.COM\">\n    <meta name=\"t"
+    },
+    {
+      "url": "https://e66fun.com/static/css/cv3d1/index.rain2.css",
+      "status": 200,
+      "contentType": "text/css; charset=utf-8",
+      "bodyPreview": ".redPakage {\n    position: fixed;\n    top: 0;\n    left: 0;\n    right: 0;\n    bottom: 0;\n    z-index: 2001;\n    background: rgba(0,0,0,.7)\n}\n\n.money1 {\n    height: .24rem;\n    background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAE0AAAAwCAMAAABjawedAAAAt1BMVEUAAAA6tks6tks7tks6tUs5tEw6tUw7tUs6tkk7tUs2s087tUw5tks6tks6tEw6tEs2tEs6tUw6tUs7tUs6tUs6tUw7tUs7tks7tUzO75c6tUzT8pk1s0g7t00+v088uk49vE6Z2nvX85yV2XlkxmE+tk1bwlxRvldMvFXH7JN9z21syGVzy2jA6pC25ouc3H1IulM/wlFEuVCn4IOi3oCu44ZWwFm6542O1nay5ImI03OC0nAusEUaGlzdAAAAGXRSTlMAX1Z9SzZ2PR1oB24lx0MxFOie2qmG+LuKzPJrpQAAA0VJREFUSMet1tmSojAUBmDc9127JyGELYCCouKu8/7PNQGEAB6Zru7+LyyoHL7KCcGKVJ5uv9FoVXu1Wq1XHTYao3ZX+k4alebnbL+nVNM0RcEYK4rKLyndTwaLXqP9VaffmQ60vabgkmh0P/tsNv4jtStzVYMByNwP3orj+hTT7IwI2S0dm3ne2r3qV3fteYydnSUhBbE3elnt6iwjEcth6+1FNmQelEl4b6yOd8/OotpHs5+xWp97AdmPAzKEASdEt2xJUnBSGUfUaEGVRDq7PgTJqw2SQTMj7gfDrrRQE9+7GeAjN9cihASuL4OzNNwEoA2plva4QVBuOz7mnB1esLyBFT5J2s1o2IBK19EQ7wmHWUMlBgY0BlXuoiFrlVwFUBEDNKguiBc0nLWM2FvuVXtAbeZHNpjHBequRc0DXtgmbpNfndj6gJAd3QMvS3ZjrfXUXADjTz8n88A8xMdRbARExzxqrDkXqGKFoxwRIjibFbjtvFTTEZRjqnk57QhWm//RbJzusYNtCc3+suYz+5Rc/8VxBB6HiMWyzJw2lJpZzcE8ptByC2VYee0e3b3V5HhTL+VES7O8ozA5TV7mqvWidiOgJhq2AA2f3mhmfpXtvManFz9"
+    },
+    {
+      "url": "https://e66fun.com/static/js/cv3d1/tween.min.js",
+      "status": 200,
+      "contentType": "text/javascript; charset=utf-8",
+      "bodyPreview": "eval(function(p,a,c,k,e,r){e=function(c){return(c<a?'':e(parseInt(c/a)))+((c=c%a)>35?String.fromCharCode(c+29):c.toString(36))};if(!''.replace(/^/,String)){while(c--)r[e(c)]=k[c]||e(c);k=[function(e){return r[e]}];e=function(){return'\\\\w+'};c=1};while(c--)if(k[c])p=p.replace(new RegExp('\\\\b'+e(c)+'\\\\b','g'),k[c]);return p}('(9(a,b){13 1Q===\\'1R\\'&&13 2E!==\\'1j\\'?b(1Q):13 1S===\\'9\\'&&1S.2F?1S([\\'1Q\\'],b):(a=13 2i!==\\'1j\\'?2i:a||2G,b(a.2H={}))})(6,(9(u){\\'2I 2J\\';N w=S.Y({1c:S.Y({1k:9(a){8 a},W:9(a){8 6.1k(a)},U:9(a){8 6.1k(a)},Z:9(a){8 6.1k(a)},}),2K:S.Y({W:9(a){8 a*a},U:9(a){8 a*(2-a)},Z:9(a){M((a*=2)<1){8 0.5*a*a}8-0.5*(--a*(a-2)-1)},}),2L:S.Y({W:9(a){8 a*a*a},U:9(a){8--a*a*a+1},Z:9(a){M((a*=2)<1){8 0.5*a*a*a}8 0.5*((a-=2)*a*a+2)},}),2M:S.Y({W:9(a){8 a*a*a*a},U:9(a){8 1- --a*a*a*a},Z:9(a){M((a*=2)<1){8 0.5*a*a*a*a}8-0.5*((a-=2)*a*a*a-2)},}),2N:S.Y({W:9(a){8 a*a*a*a*a},U:9(a){8--a*a*a*a*a+1},Z:9(a){M((a*=2)<1){8 0.5*a*a*a*a*a}8 0.5*((a-=2)*a*a*a*a+2)},}),2O:S.Y({W:9(a){8 1-P.1d(((1.0-a)*P.1e)/2)},U:9(a){8 P.1d((a*P.1e)/2)},Z:9(a){8 0.5*(1-P.1d(P.1e*(0.5-a)))},}),2P:S.Y({W:9(a){8 a===0?0:P.X(2j,a-1)},U:9(a){8 a===1?1:1-P.X(2,-10*a)},Z:9(a){M(a===0){8 0}M(a===1){8 1}M((a*=2)<1){8 0.5"
+    },
+    {
+      "url": "https://e66fun.com/static/css/cv3d1/google.css",
+      "status": 200,
+      "contentType": "text/css; charset=utf-8",
+      "bodyPreview": "@font-face {\n    font-family: 'Roboto';\n    font-style: normal;\n    font-weight: 100;\n    src: local('Roboto Thin'),local('Roboto-Thin'),local('sans-serif-thin'),url(//fonts.gstatic.com/s/roboto/v18/KFOkCnqEu92Fr1MmgVxFIzIXKMnyrYk.woff2)format('woff2');\n    unicode-range: U+0460-052F,U+1C80-1C88,U+20B4,U+2DE0-2DFF,U+A640-A69F,U+FE2E-FE2F;\n}\n\n@font-face {\n    font-family: 'Roboto';\n    font-style: normal;\n    font-weight: 100;\n    src: local('Roboto Thin'),local('Roboto-Thin'),local('sans-serif-thin'),url(//fonts.gstatic.com/s/roboto/v18/KFOkCnqEu92Fr1MmgVxMIzIXKMnyrYk.woff2)format('woff2');\n    unicode-range: U+0301,U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116;\n}\n\n@font-face {\n    font-family: 'Roboto';\n    font-style: normal;\n    font-weight: 100;\n    src: local('Roboto Thin'),local('Roboto-Thin'),local('sans-serif-thin'),url(//fonts.gstatic.com/s/roboto/v18/KFOkCnqEu92Fr1MmgVxEIzIXKMnyrYk.woff2)format('woff2');\n    unicode-range: U+1F00-1FFF;\n}\n\n@font-face {\n    font-family: 'Roboto';\n    font-style: normal;\n    font-weight: 100;\n    src: local('Roboto Thin'),local('Roboto-Thin'),local('sans-serif-thin'),url(//fonts.gstatic.com/s/roboto/v18/KFOkCnqEu92Fr1MmgVxLIzIXKMnyrYk.woff2)for"
+    },
+    {
+      "url": "https://e66fun.com/static/js/cv3d1/manifest.8f9fb89016dcc73f1b12.js",
+      "status": 200,
+      "contentType": "text/javascript; charset=utf-8",
+      "bodyPreview": "!function(r){var n=window.webpackJsonp;window.webpackJsonp=function(e,u,c){for(var f,i,p,a=0,l=[];a<e.length;a++)i=e[a],o[i]&&l.push(o[i][0]),o[i]=0;for(f in u)Object.prototype.hasOwnProperty.call(u,f)&&(r[f]=u[f]);for(n&&n(e,u,c);l.length;)l.shift()();if(c)for(a=0;a<c.length;a++)p=t(t.s=c[a]);return p};var e={},o={2:0};function t(n){if(e[n])return e[n].exports;var o=e[n]={i:n,l:!1,exports:{}};return r[n].call(o.exports,o,o.exports,t),o.l=!0,o.exports}t.m=r,t.c=e,t.d=function(r,n,e){t.o(r,n)||Object.defineProperty(r,n,{configurable:!1,enumerable:!0,get:e})},t.n=function(r){var n=r&&r.__esModule?function(){return r.default}:function(){return r};return t.d(n,\"a\",n),n},t.o=function(r,n){return Object.prototype.hasOwnProperty.call(r,n)},t.p=\"\",t.oe=function(r){throw console.error(r),r}}([]);"
+    },
+    {
+      "url": "https://e66fun.com/static/js/cv3d1/flexible.lmin.2.1.js",
+      "status": 200,
+      "contentType": "text/javascript; charset=utf-8",
+      "bodyPreview": ";(function (window, document) {\n  var sizeUI = 375;\n  var remBase = 37.5;\n  var docEl = document.documentElement;\n  var bodyEl = document.querySelector('body');\n\n  setRemUnit();\n  window.addEventListener('resize', setRemUnit);\n  window.addEventListener('pageshow', function (e) {\n    if (e.persisted) {\n      setRemUnit();\n    }\n  });\n\n  function setRemUnit() {\n    var isMobile = /Android|webOS|iPhone|iPod|BlackBerry/i.test(navigator.userAgent) ? true:false;\n    let cw = document.documentElement.clientWidth || window.innerWidth || document.body.clientWidth;\n    let ch = document.documentElement.clientHeight || window.innerHeight || document.body.clientHeight;\n    if (!isMobile) {\n      if (ch > cw) {\n        let maxWidth = Math.floor(ch / 1.775);\n        if (cw > maxWidth) {\n          cw = maxWidth;\n        }\n      } else {\n        cw = Math.floor(ch / 1.775);\n      }\n    } else {\n      if (cw > ch*1.375) {\n        //cw = Math.floor(ch * 1.375);\n      }\n    }\n\n\n    var docFontSize = parseFloat(cw / sizeUI * remBase).toFixed(1);\n    docEl.style.fontSize = docFontSize + 'px';\n    bodyEl.style.fontSize = 16 / docFontSize + 'rem';\n    handleRemAdapt();\n  }\n\n  function handleRemAdapt() {\n"
+    },
+    {
+      "url": "https://e66fun.com/static/css/cv3d1/app.6f66ee54f7efc3dce1a1a29273a3a50a.css",
+      "status": 200,
+      "contentType": "text/css; charset=utf-8",
+      "bodyPreview": "html{-webkit-tap-highlight-color:transparent}body{margin:0;font-family:-apple-system,BlinkMacSystemFont,Helvetica Neue,Helvetica,Segoe UI,Arial,Roboto,PingFang SC,miui,Hiragino Sans GB,Microsoft Yahei,sans-serif}a{text-decoration:none}button,input,textarea{color:inherit;font:inherit}[class*=van-]:focus,a:focus,button:focus,input:focus,textarea:focus{outline:0}ol,ul{margin:0;padding:0;list-style:none}.van-ellipsis{overflow:hidden;white-space:nowrap;text-overflow:ellipsis}.van-multi-ellipsis--l2{-webkit-line-clamp:2}.van-multi-ellipsis--l2,.van-multi-ellipsis--l3{display:-webkit-box;overflow:hidden;text-overflow:ellipsis;-webkit-box-orient:vertical}.van-multi-ellipsis--l3{-webkit-line-clamp:3}.van-clearfix:after{display:table;clear:both;content:\"\"}[class*=van-hairline]:after{position:absolute;box-sizing:border-box;content:\" \";pointer-events:none;top:-50%;right:-50%;bottom:-50%;left:-50%;border:0 solid #ebedf0;-webkit-transform:scale(.5);transform:scale(.5)}.van-hairline,.van-hairline--bottom,.van-hairline--left,.van-hairline--right,.van-hairline--surround,.van-hairline--top,.van-hairline--top-bottom{position:relative}.van-hairline--top:after{border-top-width:1px}.van-hairline--left:a"
+    },
+    {
+      "url": "https://e66fun.com/static/css/cv3d1/common-1.1.2.css?v=4.74",
+      "status": 200,
+      "contentType": "text/css; charset=utf-8",
+      "bodyPreview": "html, body {\n  -ms-overflow-style: none; /* IE 和 Edge */\n  scrollbar-width: none; /* Firefox */\n}\n\nhtml::-webkit-scrollbar, body::-webkit-scrollbar {\n  display: none; /* Chrome, Safari, Opera */\n}\n\n\n.common-hdialog-title {\n  position:relative;left:0rem;width:10rem;height:1.5rem;text-align: center;font-size: 0.533rem;line-height: 1.7rem;color: rgba(255,255,255,1);background: rgba(255,255,255,0.04);\n}\n\n.common-hdialog-title img {\n  position:absolute;top:50%;margin-top:-0.2rem;right:0.53rem;width:0.6rem;height:0.6rem;\n}\n\n.hshare-item {\n  position:absolute;top:2rem;width:1.866rem;height:2rem;\n}\n\n.hshare-item-iconbg {\n  position:absolute;top:0;left:50%;margin-left: -0.67rem;width:1.34rem;height:1.34rem;border-radius: 0.7rem;background: rgba(255, 255, 255, 0.08);display: flex;justify-content: center;align-items: center;\n}\n\n.hshare-item-iconbg img {\n  width:0.8rem;height:0.8rem;\n}\n\n.hshare-item-title {\n  position:absolute;bottom:0.1rem;width:100%;text-align: center;font-size: .3rem;color:rgba(255, 255, 255, 0.65);\n}\n\n.forceinstall-hdialog-rocket {\n  position:absolute;width:2.78rem;right:0.8rem;z-index: 10;\n}\n\n.forceinstall-hdialog-close {\n  position:absolute;top:0rem;right:0.3rem;width:1r"
+    },
+    {
+      "url": "https://e66fun.com/static/js/cv3d1/vendor.d5479ba2fbf1e5474176.js",
+      "status": 200,
+      "contentType": "text/javascript; charset=utf-8",
+      "bodyPreview": "webpackJsonp([0],{\"+2ln\":function(t,e,n){\"use strict\";var r=n(\"AA6R\"),i=n.n(r),o=n(\"o69Z\"),a=n(\"rhik\"),s=n(\"Pen3\"),c=Object(o.b)(\"icon\"),u=c[0],l=c[1];var f={medel:\"medal\",\"medel-o\":\"medal-o\",\"calender-o\":\"calendar-o\"};function h(t,e,n,r){var c,u=function(t){return t&&f[t]||t}(e.name),h=function(t){return!!t&&-1!==t.indexOf(\"/\")}(u);return t(e.tag,i()([{class:[e.classPrefix,h?\"\":e.classPrefix+\"-\"+u],style:{color:e.color,fontSize:Object(o.a)(e.size)}},Object(a.b)(r,!0)]),[n.default&&n.default(),h&&t(\"img\",{class:l(\"image\"),attrs:{src:u}}),t(s.a,{attrs:{dot:e.dot,info:null!=(c=e.badge)?c:e.info}})])}h.props={dot:Boolean,name:String,size:[Number,String],info:[Number,String],badge:[Number,String],color:String,tag:{type:String,default:\"i\"},classPrefix:{type:String,default:l()}},e.a=u(h)},\"+3lO\":function(t,e,n){n(\"abPz\");for(var r=n(\"YjQv\"),i=n(\"aLzV\"),o=n(\"yYxz\"),a=n(\"hgbu\")(\"toStringTag\"),s=\"CSSRuleList,CSSStyleDeclaration,CSSValueList,ClientRectList,DOMRectList,DOMStringList,DOMTokenList,DataTransferItemList,FileList,HTMLAllCollection,HTMLCollection,HTMLFormElement,HTMLSelectElement,MediaList,MimeTypeArray,NamedNodeMap,NodeList,PaintRequestList,Plugin,PluginArray,SVGLengthList,SVGNumb"
+    },
+    {
+      "url": "https://e66fun.com/static/js/cv3d1/app.d420480f0783069672c1.js",
+      "status": 200,
+      "contentType": "text/javascript; charset=utf-8",
+      "bodyPreview": "webpackJsonp([1],{\"+Azm\":function(t,e){},\"+B/h\":function(t,e){},\"+xEI\":function(t,e){},\"//Cs\":function(t,e){},\"/bHm\":function(t,e){},\"/dQU\":function(t,e){},0:function(t,e){},\"02pT\":function(t,e){},\"085Q\":function(t,e){},\"0ArQ\":function(t,e){},\"0J1l\":function(t,e){},\"0zI5\":function(t,e){},\"0zxd\":function(t,e){},\"1H7Z\":function(t,e){},\"1N25\":function(t,e){},\"1oY3\":function(t,e){},\"1rWL\":function(t,e){},\"23Hr\":function(t,e){},\"2ers\":function(t,e,i){\"use strict\";i.d(e,\"d\",function(){return v}),i.d(e,\"c\",function(){return f}),i.d(e,\"j\",function(){return _}),i.d(e,\"b\",function(){return n}),i.d(e,\"n\",function(){return o}),i.d(e,\"i\",function(){return r}),i.d(e,\"a\",function(){return c}),i.d(e,\"k\",function(){return l}),i.d(e,\"f\",function(){return g}),i.d(e,\"m\",function(){return u}),i.d(e,\"h\",function(){return p}),i.d(e,\"e\",function(){return m}),i.d(e,\"g\",function(){return h}),i.d(e,\"l\",function(){return d});var a=i(\"mvHQ\"),s=i.n(a),n=function(t,e){if(!(t instanceof Date))return\"\";var i=t.getTime()-new Date,a=parseInt(i/24/60/60/1e3),s=parseInt(Math.abs(i/60/60/1e3)),n=parseInt(Math.abs(i/60/1e3));parseInt(Math.abs(i/1e3));if(e&&a>=0){if(0==a)return\"今天\"+(t.getMonth()+1)+\"月\"+t.getDate()+\"日\";if"
+    },
+    {
+      "url": "https://e66fun.com/static/images/cv3d1/syscom/navv2/navv2_icon_back.png",
+      "status": 200,
+      "contentType": "image/png",
+      "bodyPreview": null
+    },
+    {
+      "url": "https://e66fun.com/static/images/cv3d1/syscom/navv2/navv2_navbg.png",
+      "status": 200,
+      "contentType": "image/png",
+      "bodyPreview": null
+    },
+    {
+      "url": "https://e66fun.com/static/images/cv3d1/syscom/commonv2/inputv2_long_normal.png",
+      "status": 200,
+      "contentType": "image/png",
+      "bodyPreview": null
+    },
+    {
+      "url": "https://e66fun.com/static/images/cv3d1/syscom/commonv2/inputv2_long_focus.png",
+      "status": 200,
+      "contentType": "image/png",
+      "bodyPreview": null
+    },
+    {
+      "url": "https://e66fun.com/static/images/cv3d1/syscom/commonv2/inputv2_long_error.png",
+      "status": 200,
+      "contentType": "image/png",
+      "bodyPreview": null
+    },
+    {
+      "url": "https://e66fun.com/static/images/cv3d1/syscom/commonv2/btnv2_short_disable.png",
+      "status": 200,
+      "contentType": "image/png",
+      "bodyPreview": null
+    },
+    {
+      "url": "https://e66fun.com/static/images/cv3d1/syscom/commonv2/0013_yulan_bai.png",
+      "status": 200,
+      "contentType": "image/png",
+      "bodyPreview": null
+    },
+    {
+      "url": "https://e66fun.com/static/images/cv3d1/syscom/commonv2/btnv2_short_enable.png",
+      "status": 200,
+      "contentType": "image/png",
+      "bodyPreview": null
+    },
+    {
+      "url": "https://e66fun.com/static/images/cv3d1/syscom/commonv2/0014_quxiaoyulan_bai.png",
+      "status": 200,
+      "contentType": "image/png",
+      "bodyPreview": null
+    },
+    {
+      "url": "https://e66fun.com/static/images/cv3d1/syscom/commonv2/guoqi_brazil.png",
+      "status": 200,
+      "contentType": "image/png",
+      "bodyPreview": null
+    },
+    {
+      "url": "https://e66fun.com/static/images/cv3d1/syscom/commonv2/login_user.svg",
+      "status": 200,
+      "contentType": "image/svg+xml",
+      "bodyPreview": null
+    },
+    {
+      "url": "https://e66fun.com/static/images/cv3d1/syscom/commonv2/login_pwd.svg",
+      "status": 200,
+      "contentType": "image/svg+xml",
+      "bodyPreview": null
+    },
+    {
+      "url": "https://e66fun.com/static/images/cv3d1/bg/main_bg.png",
+      "status": 200,
+      "contentType": "image/png",
+      "bodyPreview": null
+    },
+    {
+      "url": "https://sapi.godapply.com/api/tradeBanner/listByType?param=ZA0ebfEPDp%2FHA8ZczE5IBh%2B4eQPWRsFybDv%2FFMEPqV%2F5a3N0%2B%2BTTBGMe2nbJbVunzgTmvzSEghKI6497vFaxcxGhNHXUmXptlNHIa1U4XBKEP8AbVfI0T2IDCj%2FHGrKIqrzLI3aZfnAaH2wgDk1i9SBEghjYzFh38KCqr8%2B1%2FxZsUFF7HuqWV37jOBPj7B4%2BtzpgrknEoP%2F3rSVhTCWYPb3bMdb7gRh6Iohq9J1OcqbCbKnnqS06WrHRXjR7MnF1Q8XUy4Ygp0R48r%2BofkU66Wi%2F40XDnue4oBdfxpS2mMPJzTbKYO%2Bqjy8XqYLrmiCHHii%2BBUy8PzTNmsWsGNNxSg%3D%3D",
+      "status": 200,
+      "contentType": "application/json; charset=utf-8",
+      "bodyPreview": "{\"result\":\"0\",\"msg\":\"Sucesso\",\"operation\":\"/api/tradeBanner/listByType\",\"data\":\"NWHbrcUFBJjGdNjpCMeVE/0K0hi80gll49eE15WYIIa/y0pBWAunIop9sQUyxq7Pd+Uyn6tQI83yflvaDGtSj4dS/u1XCkJf/XqOgzyo1Se1UbD3ovkNJWkJlO+sqJMpws57TBzPngj6t1DMCJJHpgQuND/kGoKAbyEuouo0PrhOuizAVOrBh/07i5RvNxxeN0A5K3KXU86kUnFUxgMfF5nkFQntA2+UFQSPHdWWC2PDhsX4XVxxK5LZAsnpgV+Gb6jsslD+OgfFDE+p2tEaEmgv6d4dzr8vkLUG72nDiu2RqNu35GW/q7OPPLt6aA4Tyeav57NFS/HpDWK/tfYI//0J3TWQAtIO1kHt/ZkzjrMjb87YeaHEq2SWKNhj/a9RRD0tHj2S8AE+061I3OFaL4kjUWKKG3wsdoFBSfFQqw9oQfUoCOi8zopLXpnveVhN76VV/No/5ukJ+pP1kj73OIj9yt3/ovSg0u8Hssz23jzoV17qOEuyaG+s+xWgG2zi51m+VmCT20TYSIh/+Mn/6A==\"}"
+    },
+    {
+      "url": "https://sapi.godapply.com/manifest?p=%7B%22dn%22%3A%221069%22%2C%22ch%22%3A%22%22%2C%22name%22%3A%22E66.COM%22%2C%22domain%22%3A%22https%3A%2F%2Fe66fun.com%2F%22%2C%22start_url%22%3A%22https%3A%2F%2Fe66fun.com%2Findex.html%23%2Fhome%3Fsdmode%3D2%22%2C%22i1%22%3A%22https%3A%2F%2Foss.goodofs.com%2Fimages%2Flogo%2Flogo1069UueB_192.png%22%2C%22i2%22%3A%22https%3A%2F%2Foss.goodofs.com%2Fimages%2Flogo%2Flogo1069YTto_512.png%22%2C%22i3%22%3A%22%22%2C%22i4%22%3A%22%22%2C%22i5%22%3A%22%22%7D",
+      "status": 200,
+      "contentType": "application/json; charset=utf-8",
+      "bodyPreview": "{\"background_color\":\"black\",\"display\":\"standalone\",\"icons\":[{\"sizes\":\"any\",\"src\":\"https://oss.goodofs.com/images/logo/logo1069UueB_192.png\",\"type\":\"image/png\"},{\"sizes\":\"512x512\",\"src\":\"https://oss.goodofs.com/images/logo/logo1069YTto_512.png\",\"type\":\"image/png\"}],\"name\":\"E66.COM\",\"orientation\":\"any\",\"related_applications\":[{\"platform\":\"webapp\",\"url\":\"https://app.example.com/manifest.json\"}],\"scope\":\"https://e66fun.com/\",\"short_name\":\"E66.COM\",\"start_url\":\"https://e66fun.com/index.html#/home?sdmode=2\"}\n"
+    },
+    {
+      "url": "https://sapi.godapply.com/api/acct/login",
+      "status": 200,
+      "contentType": "application/json; charset=utf-8",
+      "bodyPreview": "{\"result\":\"0\",\"msg\":\"Sucesso\",\"operation\":\"/api/acct/login\",\"data\":\"jqn8UZwCs4xXy2stdDtBDwumXNwA9XcVZmymRw2bXzlsyFnCfek/PIZc3y578AWQabp18qXWeB5aH3Hcn6Yik9GvxEyw+ZtECO2MshCTAFkJRdDZ5W41IRdXgJraD/tppiRzmnmFJYILj7gxSbDm5aktL2bCpDPaLraPMv0iGSvsAvQ2nwcd1VAf5BfMkgBN/30VCo4Ac2GbY0fEdwFltu7Wt1cAeWLgQjLADy/f4DbhREtkjx3OBjziD3UXiQY+VlaTqCJYoeABjfdDz/g9kRbJOpqjog/zPuHVtIvP9mYFKIPqR+2e3GoposgtJKRRRcEp5q8uUwJENeusLTBoH3hmwGv4mwDDwtRenubO4xNW4Z0IYqbzVsAU1pL5nMmagSDqkl/wgciCjB1+tiK9fUfCVrTTrd8YXTj/eiVNR0mK6Q9tuhq5sFrh/EupVVVb7wq/QB8j8l216LCLBeFDsGE3mDMn3hAIkrSc9PekQf97qG+BqqBRezZhyL0e7KijTAP7N8OmFQOT/HKOeD/kAIghIqV+wv1TQS6Ds4xEQ2231tjI/qIQH0rMUcFkddBfjm4Vgdpk5X2HG6uxuqYoFv3sCwlI9iQuzo+MAEK5aU0M13U4bxpVUruYgF9N3fhzHK0WgKaTSnMG4r0mire7keO4j9dFAjwUBYhT3B6Cl+ANzOwRf1Q3VtTaFDwMj63Y3cUbCmyPN2TH/alCb7iVL43hPdRT11KCdx2evosrrGoqPEtSxflvpYjhbnxs339a+XpbYYI6hMKFxdfbNLbPZv6seqcGi3a3m+wp+J3ykUeL1sJu4ALsDwkJ4xBNySjlWE0z0lMCaDxY3SBZk/m1qPE+12TrWNoQiamxO7VK2lWzY0cFbgE9ABunf5SAS2InQjRKIoVRwp9F9LoFRKMWzXB9z9PnyPu4wPDQhP0Yt3fArGvuduksaSO1GQMGhg43Ai8fuOM6Hrh7WVNwSD/rhYRBG7JFG9egL0oYAgvO9XJT5VXKO0wNs/AUkV3i+jKNECt2eRbF1ub1WfIvybETuy+xO6PWXyKECx6h6JUnG8RDRzESTAXN3t/qOU9/86z20YSQXyrbovc1HJTdjq4OsfKUY/cW2I2nY2yWsNb8D1/F"
+    },
+    {
+      "url": "https://e66fun.com/static/audio/cv3d1/yinqing2.mp3?v=1.0",
+      "status": 200,
+      "contentType": "audio/mpeg",
+      "bodyPreview": null
+    },
+    {
+      "url": "https://e66fun.com/static/images/cv3d1/syscom/common/tcoin_bg.png",
+      "status": 200,
+      "contentType": "image/png",
+      "bodyPreview": null
+    },
+    {
+      "url": "https://e66fun.com/static/images/cv3d1/syscom/common/tcoin_reg.png",
+      "status": 200,
+      "contentType": "image/png",
+      "bodyPreview": null
+    },
+    {
+      "url": "https://e66fun.com/static/images/cv3d1/syscom/homev3/homev2_icon_topleftmenu.png",
+      "status": 200,
+      "contentType": "image/png",
+      "bodyPreview": null
+    },
+    {
+      "url": "https://e66fun.com/static/images/cv3d1/syscom/homev3/homev2_icon_topcs.png",
+      "status": 200,
+      "contentType": "image/png",
+      "bodyPreview": null
+    },
+    {
+      "url": "https://e66fun.com/static/images/cv3d1/syscom/common/tcoin_save_app.png",
+      "status": 200,
+      "contentType": "image/png",
+      "bodyPreview": null
+    },
+    {
+      "url": "https://e66fun.com/static/images/cv3d1/syscom/common/tcoin_gift_bg.png",
+      "status": 200,
+      "contentType": "image/png",
+      "bodyPreview": null
+    },
+    {
+      "url": "https://e66fun.com/static/images/cv3d1/syscom/homev3/homev2_group_logolist.png",
+      "status": 200,
+      "contentType": "image/png",
+      "bodyPreview": null
+    },
+    {
+      "url": "https://e66fun.com/static/images/cv3d1/syscom/game_group/gblogo_pg.png",
+      "status": 200,
+      "contentType": "image/png",
+      "bodyPreview": null
+    },
+    {
+      "url": "https://e66fun.com/static/images/cv3d1/syscom/game_group/gblogo_bg.png",
+      "status": 200,
+      "contentType": "image/png",
+      "bodyPreview": null
+    },
+    {
+      "url": "https://e66fun.com/static/images/cv3d1/syscom/game_group/gblogo_pp.png",
+      "status": 200,
+      "contentType": "image/png",
+      "bodyPreview": null
+    },
+    {
+      "url": "https://e66fun.com/static/images/cv3d1/syscom/game_group/gblogo_jdb.png",
+      "status": 200,
+      "contentType": "image/png",
+      "bodyPreview": null
+    },
+    {
+      "url": "https://e66fun.com/static/images/cv3d1/syscom/game_group/gblogo_evo.png",
+      "status": 200,
+      "contentType": "image/png",
+      "bodyPreview": null
+    },
+    {
+      "url": "https://e66fun.com/static/images/cv3d1/syscom/homev3/0077_fenxiang_45bai.png",
+      "status": 200,
+      "contentType": "image/png",
+      "bodyPreview": null
+    },
+    {
+      "url": "https://e66fun.com/static/images/cv3d1/syscom/homev3/homev2_left_diwen.png",
+      "status": 200,
+      "contentType": "image/png",
+      "bodyPreview": null
+    },
+    {
+      "url": "https://e66fun.com/static/images/cv3d1/syscom/game_group/gblogo_tada.png",
+      "status": 200,
+      "contentType": "image/png",
+      "bodyPreview": null
+    },
+    {
+      "url": "https://e66fun.com/static/images/cv3d1/syscom/homev3/homev2_left_topup.png",
+      "status": 200,
+      "contentType": "image/png",
+      "bodyPreview": null
+    },
+    {
+      "url": "https://e66fun.com/static/images/cv3d1/syscom/homev3/0019_copy_45bai.png",
+      "status": 200,
+      "contentType": "image/png",
+      "bodyPreview": null
+    },
+    {
+      "url": "https://e66fun.com/static/images/cv3d1/syscom/homev3/homev2_icon_topmsg.png",
+      "status": 200,
+      "contentType": "image/png",
+      "bodyPreview": null
+    },
+    {
+      "url": "https://e66fun.com/static/images/cv3d1/syscom/homev3/homev2_item_record.png?v=1.0",
+      "status": 200,
+      "contentType": "image/png",
+      "bodyPreview": null
+    },
+    {
+      "url": "https://e66fun.com/static/images/cv3d1/syscom/homev3/homev2_item_setting.png?v=1.0",
+      "status": 200,
+      "contentType": "image/png",
+      "bodyPreview": null
+    },
+    {
+      "url": "https://e66fun.com/static/images/cv3d1/syscom/homev3/homev2_left_refund.png",
+      "status": 200,
+      "contentType": "image/png",
+      "bodyPreview": null
+    },
+    {
+      "url": "https://e66fun.com/static/images/cv3d1/syscom/recode/recode_bg.png",
+      "status": 200,
+      "contentType": "image/png",
+      "bodyPreview": null
+    },
+    {
+      "url": "https://e66fun.com/static/images/cv3d1/syscom/homev3/0141_meiyuan_hui.png",
+      "status": 200,
+      "contentType": "image/png",
+      "bodyPreview": null
+    },
+    {
+      "url": "https://e66fun.com/static/images/cv3d1/syscom/homev3/homev2_bottom_refund.png",
+      "status": 200,
+      "contentType": "image/png",
+      "bodyPreview": null
+    },
+    {
+      "url": "https://e66fun.com/static/images/cv3d1/syscom/recode/recode_top_close.png",
+      "status": 200,
+      "contentType": "image/png",
+      "bodyPreview": null
+    },
+    {
+      "url": "https://e66fun.com/static/images/cv3d1/syscom/homev3/homev2_bottom_topup.png",
+      "status": 200,
+      "contentType": "image/png",
+      "bodyPreview": null
+    },
+    {
+      "url": "https://e66fun.com/static/images/cv3d1/syscom/homev3/homev2_item_act.png?v=1.1",
+      "status": 200,
+      "contentType": "image/png",
+      "bodyPreview": null
+    },
+    {
+      "url": "https://e66fun.com/static/images/cv3d1/syscom/homev3/homev2_item_service.png?v=1.0",
+      "status": 200,
+      "contentType": "image/png",
+      "bodyPreview": null
+    },
+    {
+      "url": "https://e66fun.com/static/images/cv3d1/syscom/basic/m_0019_copy.png",
+      "status": 200,
+      "contentType": "image/png",
+      "bodyPreview": null
+    },
+    {
+      "url": "https://e66fun.com/static/images/level/level_1_1.png",
+      "status": 200,
+      "contentType": "image/png",
+      "bodyPreview": null
+    },
+    {
+      "url": "https://e66fun.com/static/images/cv3d1/syscom/Tool_M/0141_meiyuan_hui.png",
+      "status": 200,
+      "contentType": "image/png",
+      "bodyPreview": null
+    },
+    {
+      "url": "https://sapi.godapply.com/api/banner/list?param=%2F4xH2AlTDoZ4KvBVLzzEGuFXwB6JK1l20w75rQsfJ7L4k%2Fgnkx0lzcbABvvjs2aKkrJwnC7XBTHwDZXzceHm6DlbjX%2Fntwl459iDOhC5yyIvlC36OxbOSWjpJDpWq71QSjXYZpCs0O9BFpZmpgGOMDT7boUr53vx5W8DPDG4JAqJrCr1I8C2MG3YcW4tUrTU%2B6hCy01ngAKGvp854Ksd8FU0rYs%2Fyha1vvJwxiBhdLBJ0G8p4WgGwZOJPrU7mQgAKKxqahTHIoq1b3sAUdR7l4iJdcnHYVRbU6xfmafRu7NbHCHaeGZbKnCtBWdljHvslUg4kxSgL2nvdCZeLgYRjE1C6wBdIlkSjvOUNmQH9zUy9nLBAf6VQGnStcZPATbLDznKuD5g1u1Rd0XDue6cNw4rVJRegZBHSxQBAa%2BSJqE%3D",
+      "status": 200,
+      "contentType": "application/json; charset=utf-8",
+      "bodyPreview": "{\"result\":\"0\",\"msg\":\"Sucesso\",\"operation\":\"/api/banner/list\",\"data\":\"WNSAkQhlO8NOHfyLTvy2pKLlqrFi/5RgRAmGYCErx2F9aOOkQCdKY2dSCgANg1eWUrnUZMgNYfSwbr0sGDh/p/Bsb+HRYP24zH6PrrcE9SNTdz+Pnmod+xBAMJzP5Cong8/0InL/GqYQombyEyxl8YjJtSAMpu740phoPXUdjTv0s1pV+H0Rj4EJd8NGADCULqnZMQgl8VhMI1cQOWAyL/O6HS4NyMhp5GOM0Om/NDDvw8GYUV/i6RGQg5iaxrs37tQU921TVNG7YfMECg918LXVO87TgisrcPRczbmgJ36cBCGoXaS5U4jchksZnzGO44/OYMowrBTJYWJYE++6dKRYb00/HfQPiZV6SU0nfP6kx8V1dP/WDUjLo7tFJPOztRfiAiHov7HTC4FU/o6wEi4wgHJs4q3ripO2Xs49AmFnAvqp65VQZEA85Ped8Qs524snfgU+OzaPbb069evx/QYezwEdjbaC4fsowFK/TMOVFz+auNHNaW6COa/L9d+F6ux5kFkx0OKQFmzH7uOzrSxg6pZZ5OlIkW8DtF7N4eSeQo2RTWR8EqrvYKOVg8RQY5tUmpEMDQJOlGjsViFfnx9YPR8TLJOSkBUpk41AVzlJMQRY/WBS865ElSNpWN9HNciZWCEz/vii1VGNWy0OZzLBE9ODtKypQwgzZ2jO5rPl9l9VJIYYKFdipaaS/Ifi\"}"
+    },
+    {
+      "url": "https://sapi.godapply.com/api/trade/platforms?param=%2F4xH2AlTDoZ4KvBVLzzEGuFXwB6JK1l20w75rQsfJ7L4k%2Fgnkx0lzcbABvvjs2aKkrJwnC7XBTHwDZXzceHm6PgNJRG3NtGqWGypF2TuHsD6OwGUtKVPkUxkmweKW8Tx4UoQEQww%2FaEQGzZkqCfXDa3cEMrx2nxvTvjHqjjc1UVuubePx%2FxR6YrPWoGMoBnl2yxL3DIvyfRXXAyQiL5NSyKnxvMd%2Bv4PRBU2KjZaRaBGGyRCHFcU7goRIOaj9qmFRKQk5Ip0VTT%2FuCGgEPFpDQ%2F5ISkZ2blFirUk1axyooQ5bas1USCyXorMob6knKWqa8T8z8V4ntdqln9JrV2Yjks1EyKcn7tctrFj2DCXRS%2BDNuwEGPtcBkDPJalIy3ix%2F0nW7Ze6gFV7QTm2OS9iOa6wOIUlqAKjYyRLYnZJ8N8%3D",
+      "status": 200,
+      "contentType": "application/json; charset=utf-8",
+      "bodyPreview": "{\"result\":\"0\",\"msg\":\"Sucesso\",\"operation\":\"/api/trade/platforms\",\"data\":\"mKqADksQ1bgb7CbvDT9BjIxgePZ9kGpNhdyP+e5XMsG2eUhYKruxOSmAu7cbOIqils23NXsDzyVCjWF3BT5Bxw04YoYPjmzNcypmRVouUhxPWEI+pCzyXT/jAROsdFp6AUPe/2CejpekBRkDMMuNScKPM9g+XM/lk+3ScyirIIkh3ZwxIuPHfnupgy5BPomMgoVbjW4JE8srNyhupoNMutuxd8xPgTNjOXkGvFL9fisAVgKWik6Pchx6nWzHFs/7o2Z+I4J1FqOJWM0TFTw2a81rBdNiEEQFiL+yOaYkFXjHe17OuzR6hLlps7X5xb5wzZQBpWNlpNPiYXM1VgpngarNL35xmNaljavNrvFpd7ssMSbfKGOobcJI47fuHXT+FtBAZlKpRc95Xl+gpsrxeaNrlafsQ77gEJkNtE33zuUkCx/UgiwoFCVDEUgfR9Wzapk1JJwpsEDnnu25g7vQ/5flk2v+OQl5cyaC+my42IccqLUck7zTc7eQLN3mIK4TrF8NJ4SgW4ShdPV95yBXrbDcBS83u70ie5fASVG0HCdklKRkaOiu7LqkJSjgHjFLrvctqhQMMvSLhRq9eHcuqg==\"}"
+    },
+    {
+      "url": "https://sapi.godapply.com/api/promotionLink/list?param=%2F4xH2AlTDoZ4KvBVLzzEGuFXwB6JK1l20w75rQsfJ7L4k%2Fgnkx0lzcbABvvjs2aKkrJwnC7XBTHwDZXzceHm6PgNJRG3NtGqWGypF2TuHsD6OwGUtKVPkUxkmweKW8Tx4UoQEQww%2FaEQGzZkqCfXDa3cEMrx2nxvTvjHqjjc1UVuubePx%2FxR6YrPWoGMoBnl2yxL3DIvyfRXXAyQiL5NSyKnxvMd%2Bv4PRBU2KjZaRaBGGyRCHFcU7goRIOaj9qmFHiJhR%2FiCdoklXTKC2PmpPHaeb549irJjfM8fMXQeYiQg4xQsHOCg0mWHbhRT6yTC1SMcHtXaL8U1ZImNvGYfqSvlEsgD9cyxtP8Mc917EEN5cGdH8B9ThgsyOycGTPp5ymPY5j0XXwbRgAxTqWH8Kfqc0KsygEXNXfnbgUApiTM%3D",
+      "status": 200,
+      "contentType": "application/json; charset=utf-8",
+      "bodyPreview": "{\"result\":\"0\",\"msg\":\"Sucesso\",\"operation\":\"/api/promotionLink/list\",\"data\":\"6lniPl7dWZjdAibFNXFuk85rd89fkYiC2nAlpJW/5GQDT1rTswzyP29pByte/1ojcscZdJqozA2rrQXwDiLr99DZAPNAapBBifQ/zAGC6ibA+OG9gFqczyD3BvpaQT7BfmVkaciqowJan/HfP7i/zfMvzZEqx6zuHrg2fpw/cXgs4RFDZ2zEmYpvAgzHpW1iYwxgW9fC0BVbuB89kZgStEIpYVC3Yn+HPYxBbrbL+5LqAAZ/VGvE4zmviKzWnelf7SV7i0k3NqM4uUOs0T7M4xQtTa+swnSf8XLjUCLP9w/veXlBEUpTk2HD5stRTSt3VIhcwjmVP3tP/fH4aZ5C7qdhu/NyLNqg8i/mVnhAY/gBCn+krZECku+0rq3WCLBd\"}"
+    },
+    {
+      "url": "https://sapi.godapply.com/api/trade/platforms?param=%2F4xH2AlTDoZ4KvBVLzzEGuFXwB6JK1l20w75rQsfJ7L4k%2Fgnkx0lzcbABvvjs2aKkrJwnC7XBTHwDZXzceHm6KDuYcvLlPytDHtfXw4MoMexZJwpgv7gRwO8%2F92kD9oztS35nyY%2BTV0dem95HnB5amFDhQnvzuIMmNaWMXmX1X1SHJTV2ZmxxJnJGPimF2yfzP1bKBM1OAqM4GyFTuKLrqmcQQ%2FNL4fOe2k9id7SzGGRqIJTBVcnBKyHGxmFo25TBSfNnz6yY12uCyV1xg749F0DIlU6h25P32kzNR1hIztFTgumG%2B3HgfYWabbjF3qX%2FIwlktHuIqubq%2FogbcN33AOZ4Biszw9NqZ4EFtZcWlsi%2Bn1FwvdwTQyeKqRSbz1nfWNDl57FgB%2FCon0vDN8Z2CKxpo10YTH2DjWuFYJryt7IMXOQnxzvrFOimL4AgHs2",
+      "status": 200,
+      "contentType": "application/json; charset=utf-8",
+      "bodyPreview": "{\"result\":\"0\",\"msg\":\"Sucesso\",\"operation\":\"/api/trade/platforms\",\"data\":\"mKqADksQ1bgb7CbvDT9BjIxgePZ9kGpNhdyP+e5XMsG2eUhYKruxOSmAu7cbOIqils23NXsDzyVCjWF3BT5Bxw04YoYPjmzNcypmRVouUhxPWEI+pCzyXT/jAROsdFp6StptcjCvZG4Oyg0W6vybg6TIqg25jEG4Gj2z4roE/XWCdJXWcDvGHJhv/Y7YBjCb6g7SIf2tLFZwdWTixX4TrgsizaLMFrItu+L6ch8fSGpp1PIiKOg1cxtFHKRfLjV3SnFKsULjERC/64oFXt1DWPtKECnCkVHi2r6dL4N5wk4cqkqH+Du4QBiqIZI9+wJCfm5z6rwsADLl04XN+Eyx7MYs4NIIc+YVbt3pRWOebo4kR7C2Jfoe/oyrkIHhJb6ivJ6JrrsJu5dYEyJnf/qCYnPtrzC6VzHzuyZfc+84Pf5j+1jORvYctBbhqs19GcEbvTws/TXU6mrbSbDRFEFHbSkXVP9m+YnF7V/ttWr/46qcjesNOrJanhbdcp/qKGBH7jih+y5pLsTObu8WdNWVmdHrvflDlBgEIIlgpvi6CzZq4n4ehrJLWX/MQ0OjNw1tWHQDpknD+FiM6MVoLPzXWbR8bgp4Rmj6KxCYFq0Z+62SVXGn2SBDVHsQQSRZVo1qq/e6mzAJ7HIrcEIaDjpGxBZfliVUt+53dGgPnKIv3Od+ixNhmoDA5uGlfgxPzG7NuphjSlVyxd3VhbehMKHQKmF8u7M9YhGChIuNb1gAdkcnk8BrQYSLBL6Y2uSiPQEi1WVhWylYhpNq+jRNZQNyPasRQF+LLj3ohX+MCwHGdxo=\"}"
+    },
+    {
+      "url": "https://sapi.godapply.com/api/notice/unread?param=%2F4xH2AlTDoZ4KvBVLzzEGuFXwB6JK1l20w75rQsfJ7L4k%2Fgnkx0lzcbABvvjs2aKkrJwnC7XBTHwDZXzceHm6DlbjX%2Fntwl459iDOhC5yyJBtKcslm83ZWzqsHZMYLTClFQcGx4Wd%2FEh6Ya%2B8JoAG4dSgMCMfhMOxQ312wgZPoiXwfWo8mIIoaYoJA3A8%2FJtHJHnlvpkaliGYsPGbDmI92DUP5vvxEDM6O4jdWjk8dvninzzMbS2cOJEkax3NJtR%2BzMLaRtbwH4FcPNfuWq6%2B7TxhSe2vo1%2F3HQOq6PvD8kc5aUFXhAZyY0k%2BW%2F9oa2%2Bbef7InV%2BSjUHvvPvf%2FrgbmOyaL9kaJWzmzTR%2BT1JQ9nznJT8Q2lkgcYevMgVSJOuoQMVmbDorLJIGIE5FJjKSD6Y3DwZCq4XB2HNzX2ViH8%3D",
+      "status": 200,
+      "contentType": "application/json; charset=utf-8",
+      "bodyPreview": "{\"result\":\"0\",\"msg\":\"Sucesso\",\"operation\":\"/api/notice/unread\",\"data\":\"PjVofj9iknNrKnT+36VxlnetIGpnF2VbHf4qd9GS5SEyKl0kOrKyeTfDcoTUuQBben2KHg5u5RwBp03PpW0NYA==\"}"
+    },
+    {
+      "url": "https://sapi.godapply.com/api/acct/guestLogin?param=%2F4xH2AlTDoZ4KvBVLzzEGuFXwB6JK1l20w75rQsfJ7L4k%2Fgnkx0lzcbABvvjs2aKkrJwnC7XBTHwDZXzceHm6Jb786xauQEbNPam1cFTfub%2BXDOeB1DQf3%2F3hZMDcrbYj8v1kXzBOfYKcFl0iow8HPJwSH4yB3D9k3XdZEP0W2voON4nQYcRfKvGqg1iOZZvVFkCeNpap3C5gm6qqUh7%2BrkkEI37D%2FDjGlqKXeBD%2B0Lj4ODKKi8LdV01grR68Zy7KeDljzWVZPvVhcjclsmLJClr44dv75NFHji%2FaH5ELAvMbD1mDTWoAtCTe8LFvfrtkM5euvty6BYLbczAgzxh1x9weGUMrstTNSMbC5kx%2BtuNcBl%2FAzZLtItktYd6v%2BDMAXHzBvQsXxs3%2FIxMw9qQUzdadY17dV%2BJ7TPiskMdl1OTFbfLEaxrUppC8dc1dDIgIrozXEK78pR0pe8wia29M3jiN9iWKNosCvzz%2FBoHG1mhj95I0AujobvON%2FxhVMsPAPpIsAG3flfgP%2FZwAYWceRObzYr7NKVaJi8aj34xncO%2Btf9MAYRi%2BLbR8LYnVtjp",
+      "status": 200,
+      "contentType": "application/json; charset=utf-8",
+      "bodyPreview": "{\"result\":\"0\",\"msg\":\"Sucesso\",\"operation\":\"/api/acct/guestLogin\",\"data\":\"Rx0yRQmfrpI6CPkbMoPEJrlWa5wA2WCKh9FV8UPuSxYzXHv3AzwSjOFuZRXUYAlTwbRi8EFonFLJIPNL9nIVCqe760XhNWXnKLSuyI7eDE6e3uy1KFhSZtHeV9cKduhWfPlKkpWvPJFj/RNUkPvF899QRQgqAtm4+UOm4VFzb+0Y8k2TkoMEz8CKt6dPQPSQ3panW6fsIw22FWKD9YqvLmKWbYQynUlyG5plBgOZBCfov0tolqJXCj1PriYIAE3go4+GPr6Y+T1g8BZsyDaOi1JfDYxevURxPv1H+xABlI8eLcwKr0lDzSFPtpKU/tc3GeljVBLBgkicYpxYIYbaKxc901OutM0u1SmaOKbggR7AtZO5gqRXUowtgCZJtfaz05huwUB8+533PRA0ZPaylit+n70ce+mkZWpxJ0Fy4u3ZxXAaJIAHn0laWL5Q0KotT5LXdS1KluzziBS90VeHABXZbI9eob3ZS9RCunHg4xN8i3aCNJVazXVroCH9gcf5ccZLBzvUYUiOJPY20nqESiSdNSFwbB1GeRMGC6WQ2EjCtJdxBdDpfq6TI2YEGwMRB+VMVT5EUT07iASCiYsFoLYnJht4bBaKzMTaDOfYFJ8VpJOxOyCBE5XwbjWu3EDcVYFJHMEyCKwqXU8kNw8sAcvP0MkmrzgQnE5m0hcyCp1mQNyianaDj3l3BVPQqP6jQEd4X32n/QeYqOOgW6Ov0upnjHpVUMQuKtmnKZ6vZk+6ZyjVf07hOt0QKobncPjf8FGM0MQT+387IVHlA7agMJzyiAyDo0j3WqWo7rh4HQSHMu14VSnetUHF6wbmsJPN4225gRVQyMzi0oFZZxu4vVGODKdHpwRWh72aM+TKgShm1TzuP3S/XDcpAAVkbMHu53BKzrdPkaP0mEnu/7ClcOeYDsGXPGLA/7BJ5huZU85QxtWs2lK+6dHBwhI/tvR9T6EHY8VA5ivrayZazt9xeoneRyN8cZaxp+DOhB/l/fmwj+9IoHCAgUfDXH6QAZs3F5qkg0r4oRn01SbjKLYy4ic3pY/DVbhXsaCkDnJkInr4SXKhMjOi+D67SnKxUPh1T8RmlwugBfvfEj1L4gUUN4WOIvQhc8iqWuFIpqH"
+    },
+    {
+      "url": "https://sapi.godapply.com/api/user/info?param=%2F4xH2AlTDoZ4KvBVLzzEGuFXwB6JK1l20w75rQsfJ7L4k%2Fgnkx0lzcbABvvjs2aKkrJwnC7XBTHwDZXzceHm6ICnqSXi%2FSvBrWtLNDIgt9V9XxJysuOjsE0PjwOp%2BoCCmGLVHyKMBDpmIRn8ULZhhNXWYxpwb6sx1bSO7rjE8nzPuLOAVP6g1CYYtLGKAlCXheq08o0fSnjkdC8wxyAKiMA%2FIRA69dng6u5WxHEtvPbOjzMBX%2B%2BzTEpQ24jB6weTtaISdGQksSzj1Ggg0LZnbPTebO4xWiqcYA%2BcEJ3G%2FSDf2qZeqWoMVPuiL4AauaPWkc11OnP00FEH%2BZ%2Fcr4jaXOp9yRHX%2BJUtJ3XqBoPNnOW3B47iBiqqb344JtVwCpRTOF5pdNtS91nFKCcAT3E3o3pueAW%2BUdYBjX2S5WfqkxgjT%2BeNrZlkw3acFG2wZ7OJk1yGhx3xZW7RtQznVK1YILsVPIz8CJzwfi%2BcEOkTDU2MKQh4I2h1%2BESkRuCYjHDPzAj0s%2FYfQnB%2F4fiQrFk04A%3D%3D",
+      "status": 200,
+      "contentType": "application/json; charset=utf-8",
+      "bodyPreview": "{\"result\":\"0\",\"msg\":\"Sucesso\",\"operation\":\"/api/user/info\",\"data\":\"HF+kiuyLfgzrSRBmhWteU6L7EzW/SeVAx3Xdw8OssdnbeTIge2qAqkvYqfeAI46qhdwxJxSXGOTtb3G5NR2flQtZy4fFvBzRn9AplvlI1tJKv2A6CX6NwYrqm2SXZYPGiUtcxrgCfMCkZf2oA7wbE9+BxrhDr5hAJS9i/DWI337lOEv7H4x61tDpzIJvNv+i6k2GJ4Z9wfo7yigm4tD6cJQfcSzIQEULjuRVN3+7/Pgk2fUn1jBx5gVD5zkU/JJc+yEXgbc4mjsP7wiG8EcMCJgiOde+6tTTwRgZMK9e1OhBMaMwDovf5WAuU2b/f8aNIv3f8x87yAGaGrvUsWNE7N2fMqc7VTrqzKZsIJEq+TV6qcbSlTMgTfdvHadoG88hB1+Xs+/r7+YceC2oKXiVvuofTujh+89Y8nFURAnRwgRRMEfKjiMY2M1TP0cSFCdKnz4UDG274m7Qg+tnM+kMoDbTxfq3GQdLi7Q3+FR8OL2CziDxogHKBzO/AYuIKtokVldAfA+qEDoJiaNXDhXF43Q4ijFd8czhJwl4758aMJ8MRIodYbad2mBIGbrmC11e7AH8Rd5ejgK5Jm4g5WXjJeWkU9HrtRMoS13Zzi9KsKMRzBXc4OfkRDMekhMKp4gGovefETWjX4b+CVteEtP+Jo8xEZoY40acFgofWs/YiVEsSLogOK18x771KgQcCF2gRqD5gwCklW0M9V+ibFYa/ohf4mkxu/NYVw9yYkyfF1RR8Wx7VYgebq/VAdsW52eOAAO88xWO6SUXnYhVHHcwgLd3ZfPiyAJetkaxBuuWA3TvZsSTz1cwfmPFPocGqB7x57qNTRiYpd0Zpr6Ws0h4b2jEbqaO4+7uSivGHxGYwgPqKq+heU8VllO346/dUGOMXayjoldC3PgRehO+IDXR8t4ebMzTfuW/UYQGN6+P/yInFMLehsLBqHGb0fh2yZ0KIjWlyD8P5O+d10ctPxjci2V2C2L9j6T6XqFpTiGDNSdDiYv1Ya1tbD0PfEdOc8IngXn49IXQ/TxOYemW65F2czGLJYWq2UrF/YIlKPv1YUl/ZibDIKgKbrDY3Uhr9vD8f58YfiQqq2UGulZ/lwZ4FKfPUIOVki24DOOInn+Wm3EUc"
+    },
+    {
+      "url": "https://e66fun.com/static/images/cv3d1/syscom/share_icon/home_share_telegram.png",
+      "status": 200,
+      "contentType": "image/png",
+      "bodyPreview": null
+    },
+    {
+      "url": "https://e66fun.com/static/images/cv3d1/syscom/share_icon/home_share_18.png",
+      "status": 200,
+      "contentType": "image/png",
+      "bodyPreview": null
+    },
+    {
+      "url": "https://e66fun.com/static/images/cv3d1/syscom/homev3/homev2_cabeca_noticias_new.png",
+      "status": 200,
+      "contentType": "image/png",
+      "bodyPreview": null
+    },
+    {
+      "url": "https://e66fun.com/static/images/cv3d1/syscom/homev3/0208_Close_bai.png",
+      "status": 200,
+      "contentType": "image/png",
+      "bodyPreview": null
+    },
+    {
+      "url": "https://e66fun.com/static/images/cv3d1/syscom/homev3/home_download_bg.png",
+      "status": 200,
+      "contentType": "image/png",
+      "bodyPreview": null
+    },
+    {
+      "url": "https://e66fun.com/static/images/cv3d1/syscom/homev3/homev2_game_groupbg.png",
+      "status": 200,
+      "contentType": "image/png",
+      "bodyPreview": null
+    },
+    {
+      "url": "https://e66fun.com/static/images/cv3d1/syscom/homev3/homev2_game_num.png",
+      "status": 200,
+      "contentType": "image/png",
+      "bodyPreview": null
+    },
+    {
+      "url": "https://e66fun.com/static/images/cv3d1/syscom/homev3/homev2_game_more.png",
+      "status": 200,
+      "contentType": "image/png",
+      "bodyPreview": null
+    },
+    {
+      "url": "https://e66fun.com/static/images/cv3d1/syscom/homev3/homev2_gamearrow_left.png",
+      "status": 200,
+      "contentType": "image/png",
+      "bodyPreview": null
+    },
+    {
+      "url": "https://e66fun.com/static/images/cv3d1/syscom/homev3/homev2_gamearrow_right.png",
+      "status": 200,
+      "contentType": "image/png",
+      "bodyPreview": null
+    },
+    {
+      "url": "https://e66fun.com/static/images/cv3d1/syscom/homev3/0016_shoucang_bai.png",
+      "status": 200,
+      "contentType": "image/png",
+      "bodyPreview": null
+    },
+    {
+      "url": "https://e66fun.com/static/images/cv3d1/syscom/homev3/0209_bofang_caise.png",
+      "status": 200,
+      "contentType": "image/png",
+      "bodyPreview": null
+    },
+    {
+      "url": "https://e66fun.com/static/images/cv3d1/syscom/actv2/act_more.png",
+      "status": 200,
+      "contentType": "image/png",
+      "bodyPreview": null
+    },
+    {
+      "url": "https://e66fun.com/static/images/cv3d1/syscom/vip_m/0049_VIP_hui.png",
+      "status": 200,
+      "contentType": "image/png",
+      "bodyPreview": null
+    },
+    {
+      "url": "https://sapi.godapply.com/api/game/index/v5?dn%3D1069%26uid%3D136587701%26s%3D1f83e3a7c70934fa4e839a5417f0cdb6%26c_type%3D3%26glimit%3Dundefined%26ver%3D1.6.9(1P)%26app_key%3D%26sign%3D%26token_ref%3Dd1e9bdc16c2a888de82b1da27e567fa308%26gk%3D068a4c658b53de2400b63ad88bea3741%26time%3D1778861831109%26dev_code%3D4a8201197a21038b925e0950d19f1874%26gpp_code%3D",
+      "status": 200,
+      "contentType": "application/json; charset=utf-8",
+      "bodyPreview": "{\"result\":\"0\",\"msg\":\"Sucesso\",\"operation\":\"/api/game/index/v5\",\"data\":{\"game_groups\":[{\"gr\":2,\"gn\":\"Quente\",\"i\":\"//oss.goodofs.com/images/poster/gg3/gg_quente_v2.png\",\"bi\":\"\",\"lt\":1,\"t\":1409,\"pt\":9,\"gip\":{\"d\":\"\",\"c\":\"\"},\"g\":[{\"gt\":11001,\"gsn\":\"Fortune Tiger\",\"i\":\"//oss.goodofs.com/images/poster/n3u91753241534023258.jpg\",\"ic\":1,\"at\":2,\"o\":1,\"f\":0,\"go\":\"\"},{\"gt\":11002,\"gsn\":\"Fortune Rabbit\",\"i\":\"//oss.goodofs.com/images/poster/slux1753241551015070.jpg\",\"ic\":1,\"at\":2,\"o\":1,\"f\":0,\"go\":\"\"},{\"gt\":11155,\"gsn\":\"Fortune Snake\",\"i\":\"//oss.goodofs.com/images/poster/81rq1736252862884051.png\",\"ic\":1,\"at\":2,\"o\":1,\"f\":0,\"go\":\"\"},{\"gt\":5004,\"gsn\":\"Colelho Fortune\",\"i\":\"//oss.goodofs.com/images/gameicon/9F_Coelho_Fortune.jpg\",\"ic\":0,\"at\":1,\"o\":1,\"f\":0,\"go\":\"\"},{\"gt\":17015,\"gsn\":\"Fortune Neko\",\"i\":\"//static.heibao.bet/icons/gameicon/jdb/JDB_Fortune_Neko.jpg\",\"ic\":0,\"at\":2,\"o\":1,\"f\":0,\"go\":\"\"},{\"gt\":5007,\"gsn\":\"Fortune Tiger 9f\",\"i\":\"//oss.goodofs.com/images/gameicon/9F_Tiger_Fortune.jpg\",\"ic\":0,\"at\":1,\"o\":1,\"f\":0,\"go\":\"\"},{\"gt\":15153,\"gsn\":\"Money Coming\",\"i\":\"//oss.goodofs.com/images/gameicon/Money_Coming.jpg\",\"ic\":0,\"at\":2,\"o\":1,\"f\":0,\"go\":\"\"},{\"gt\":5002,\"gsn\":\"Fortune Ox 9f\",\"i\":\"//oss.goodofs.com"
+    },
+    {
+      "url": "https://sapi.godapply.com/api/lunbo/list?param=%2F4xH2AlTDoZ4KvBVLzzEGuFXwB6JK1l20w75rQsfJ7L4k%2Fgnkx0lzcbABvvjs2aKkrJwnC7XBTHwDZXzceHm6PgNJRG3NtGqWGypF2TuHsD6OwGUtKVPkUxkmweKW8Tx4UoQEQww%2FaEQGzZkqCfXDa3cEMrx2nxvTvjHqjjc1UVuubePx%2FxR6YrPWoGMoBnl2yxL3DIvyfRXXAyQiL5NSyKnxvMd%2Bv4PRBU2KjZaRaCcTAlqAP2Q05Mp4tEMwd5VppVpDJsaXpVujXHVHcpFJG3%2BCiLNN8I9gQwuNbpFE9UHiT%2BuBUE0k%2B8oMTpQkD67IntXPG1v%2FXG0y8LSV%2FMoxwpDj2o4Wo9Tgt2AWKix5WClgZ0busl8uOsPAfkMUu46Ww%2BX1lR%2F4uy1ZnBh48eJ0cQki9c6tvZmD27yb3gpyEY%3D",
+      "status": 200,
+      "contentType": "application/json; charset=utf-8",
+      "bodyPreview": "{\"result\":\"0\",\"msg\":\"Sucesso\",\"operation\":\"/api/lunbo/list\",\"data\":\"doiqerF5WfLPBVECoapQ1/W2/KzzwMrm3faHIU8cbMBi7qllO/OjIhdeuvK449OVBMM2jFhNL/H2utq/UQl/3RKv5QnCjClaD6SviB1UH8T05nRdz4eDZsMQoplWRuxZVa5apm8JdnIQklTvTV8guu57KrY3+nGbdQpJWeB3D32b9Rg6Y4TMOxIIIpdbtRvcswMZ5vX3TMUWtxZDUeOq+6oIcOwx8Kt4kVaQkr1jA/fidnNnQulTOc+AaHchtKEyzSsM6F9sKfSCw3ZvRvnyvT3c680vJmo8hBuZOu0mtq/e1aru8zUKr5ShTSbGqK66yiTjsspCs+VAiPCr8jXeMA==\"}"
+    },
+    {
+      "url": "https://sapi.godapply.com/api/activity/list/v2?param=%2F4xH2AlTDoZ4KvBVLzzEGuFXwB6JK1l20w75rQsfJ7L4k%2Fgnkx0lzcbABvvjs2aKkrJwnC7XBTHwDZXzceHm6DlbjX%2Fntwl459iDOhC5yyJBtKcslm83ZWzqsHZMYLTClFQcGx4Wd%2FEh6Ya%2B8JoAG4dSgMCMfhMOxQ312wgZPoiXwfWo8mIIoaYoJA3A8%2FJtHJHnlvpkaliGYsPGbDmI92DUP5vvxEDM6O4jdWjk8dvninzzMbS2cOJEkax3NJtR%2BzMLaRtbwH4FcPNfuWq6%2B7TxhSe2vo1%2F3HQOq6PvD8kc5aUFXhAZyY0k%2BW%2F9oa2%2Bbef7InV%2BSjUHvvPvf%2FrgbmOyaL9kaJWzmzTR%2BT1JQ9nznJT8Q2lkgcYevMgVSJOuoQMVmbDorLJIGIE5FJjKSD6Y3DwZCq4XB2HNzX2ViH8%3D",
+      "status": 200,
+      "contentType": "application/json; charset=utf-8",
+      "bodyPreview": "{\"result\":\"0\",\"msg\":\"Sucesso\",\"operation\":\"/api/activity/list/v2\",\"data\":\"MxjVWFMC26a83ENfKA0SsNOLuDIKlr+GJHITk+wQw/QKCJv4tThgJlxM1rMsrIujZF+zDYrw2p3wWEXXu9hTsX0oTQqPckaZnvMzll7FvEifye3CFiJxFZsTogdhzFHxOQCaVkUbAtwd+w1cr1PDCEXhRO/HBizJe/1UG/Qbqcru0crTL3Rak9xaGcEO9f7MPmhyMPrjoGg1/V3N456pXMIM8BX2tUXBCdw5Q02IqxkZsEbNzbDnWiyF/8UtoqwceA+yjCvAfPl17Kb1JY69XLf1u7qTeUmG1B4FRrZYY5CuUD0aziBIyVWqLtQIM2S0EOagF5vcYyhhB7xdCEIUuhGO2fmKhGY5PcKOC76NILYwlEHINi07BwsPuQmR0QyQeIiU5cKKswz3A4bQ2mty1D9rvfTyU7bgCO26by06+wflUduA1ojkjwrhs96dCXwAk2ztCNZ4Z/BrdsKnB8S0Igzs4ePtMkGeenqwZNqUusg3bs/qQKKbuKZWILV8R2o0qpbOo6+ryXImJtUl7kFE/io0zMWmZghYiAMGWtk4/yuGSiRuWooGTR+o12rS8XGegAj1FSXske1r0YamrK8pINAgzaayeEJMfv72HxSJ7tjJEqFmdvTd69FNuzub3Xdxz4D+vLaBcfZnnvazq2f0o9qw+CTiWJcbR8gRYVIxTkJWXYJ55VCnibMkl36lvuksKQ1O2DMGTEg4iqet2QIY20XHECqrsk7NddZLGKzTJo8nML957f9MS07VB5Rfvsk7S8t9HPpl99ABs8o8MIT/whVG8aDPo+WHIDGvNQmVia+UAANg/gev7/AqIKHF2h/ZwY+sK45FDmUS+OVeLDs8kl1Jz7RPdfqiys0MehehijjEb0QZYpRDJ5XnYdbDsm9wwDRj378BcJtLw40Op91siQ+4EvvdCRSLbO1o4C+N8yr6q7MI7hEtmXnMMXNGT+7VUUP49NRGjLkjTBAM3pvx/aP0yRAkC5iua57uvIhQqC0oqsLVZ5rxFO7eJj9gM65KrU84z2N1LvHfUt4cmrCQoM10q93G/CH520trIGiYKYHCnuwsB4vZgoElPwHaMK6vc12uB47ffvLRd2iVkyt/x9wgEo9vzni3j+OUq/"
+    },
+    {
+      "url": "https://sapi.godapply.com/api/activity/list/popup",
+      "status": 200,
+      "contentType": "application/json; charset=utf-8",
+      "bodyPreview": "{\"result\":\"0\",\"msg\":\"Sucesso\",\"operation\":\"/api/activity/list/popup\",\"data\":\"xowHUzNGFs5ZSv7GrYWNG6jlqxySx0VjBvzkEdxzoICxw8h+bSBGPN8+WqcL9qw2JKXF8jFLh7DXWdVzMseqrmUzzJMiYKSjUk7VP3Iroky4W7DKB/PBq98AwjwpnzeQYG4o5TBu8klWpMoKulDfvMAwhpDk7g79KMA6jHE17PgCUAUp5p/yx78aiGqksF0Wtkf6l8Tz6QBcJppryNbUVmBWT7RhH5/hlWmL/wE6Ilu/8c76zH57/vPHnBm2XpaF/d4ArC9wDg3dl7uYYQKI6cD/D2EdQGNB3FbFvI2PFzlZZQTHl1LxTqdV/XV+1jXB7JYhpEJittHAV2c6Yt3b5Y9qbDiHcIYsicAGAMwboXVfZ5XAxolwGsC6k6fgvm2e6pcaFyNs/B8vf8nvw7rn8ciM+7OHfaNj9UUSzIgqxEkgWveoSF34Ho+TuVsi8rPaJ6HeEACZm+CZPKbIUjCx+BfzZ7dHMrbkfmpsrurVg/GJRKVNvM1YhRrV0lYqRIL+wB1iew10W3p4ncRprbvIsHHUdBDRg6PYS0sbIhJ9nJ2uZ4uXYJPsRTuk7CjKzl8OO0YE3VUiBvk2SF27tFrm4A==\"}"
+    },
+    {
+      "url": "https://sapi.godapply.com/api/notice/unread?param=%2F4xH2AlTDoZ4KvBVLzzEGuFXwB6JK1l20w75rQsfJ7L4k%2Fgnkx0lzcbABvvjs2aKkrJwnC7XBTHwDZXzceHm6DlbjX%2Fntwl459iDOhC5yyJ6VscTvCyhswpgP6JOwm05znjqohOERYyK5%2B0tlHMcYq2o6yP8D3IsIV569vQXNGnq2jx9goWFtctWY160YnsfsiqleXzetQjueN%2FymJnRT565gWpS0c2NQsR3bqZJ6jzho5qWP3aiaUScMsh5McEZInr3GwXTByvSLxv5q78ksdJwqk56nOPFdeLBaVCozngNhRF3FjfZlRvnjfpI73hca2BoLbHfMn5rxLc4CWyX1RrErEXF76NVTx9wsjlhH7V446pf%2FUcF1j8N84gYtdcmb2O6%2Ble4XBqmZuo1nEPK1MNUnfyCKWe10Yqxz5zLpTE%3D",
+      "status": 200,
+      "contentType": "application/json; charset=utf-8",
+      "bodyPreview": "{\"result\":\"0\",\"msg\":\"Sucesso\",\"operation\":\"/api/notice/unread\",\"data\":\"PjVofj9iknNrKnT+36VxlnetIGpnF2VbHf4qd9GS5SEyKl0kOrKyeTfDcoTUuQBben2KHg5u5RwBp03PpW0NYA==\"}"
+    },
+    {
+      "url": "https://sapi.godapply.com/api/notice/unread?param=%2F4xH2AlTDoZ4KvBVLzzEGuFXwB6JK1l20w75rQsfJ7L4k%2Fgnkx0lzcbABvvjs2aKkrJwnC7XBTHwDZXzceHm6DlbjX%2Fntwl459iDOhC5yyLJmXv4vDy0zbHsDmQcqGK4pDLDKtfuTRm1P9ZTVvaowWrezEA%2Bk1fo4zNZ3th22HhSQFFKnHVnw9VWOzTZmrZYFYIm0cbCqM8k33pZqICgo5GR%2B%2FiVUmu6NXcHQTW1R3H691k4jT%2BfhpWOpj5O0x4G7b%2B0Wh9e3%2BU6ZLQjYvusldYqnrqchlS2p0upRHYlt86Ec2b2Gl1Kl%2F9VbjiW%2FdThqiaQHF9RmDINJBVq9qbXBZavpfbeDwxIhElgXYomqX5LzJALaY%2BBe5WRZ0L80AKpcYlgq8llYau%2BQrRZ7YCjGBMiZ1Rx8CtZZ5Jf8e3dpM4%3D",
+      "status": 200,
+      "contentType": "application/json; charset=utf-8",
+      "bodyPreview": "{\"result\":\"0\",\"msg\":\"Sucesso\",\"operation\":\"/api/notice/unread\",\"data\":\"PjVofj9iknNrKnT+36VxlnetIGpnF2VbHf4qd9GS5SEyKl0kOrKyeTfDcoTUuQBben2KHg5u5RwBp03PpW0NYA==\"}"
+    },
+    {
+      "url": "https://e66fun.com/static/images/cv3d1/syscom/commonv2/0051_tips_jianbain.png",
+      "status": 200,
+      "contentType": "image/png",
+      "bodyPreview": null
+    },
+    {
+      "url": "https://e66fun.com/static/images/cv3d1/syscom/commonv2/0208_Close_bai.png",
+      "status": 200,
+      "contentType": "image/png",
+      "bodyPreview": null
+    },
+    {
+      "url": "https://e66fun.com/static/images/cv3d1/syscom/commonv2/deposit_tips.png",
+      "status": 200,
+      "contentType": "image/png",
+      "bodyPreview": null
+    },
+    {
+      "url": "https://sapi.godapply.com/api/trade/platforms?param=%2F4xH2AlTDoZ4KvBVLzzEGuFXwB6JK1l20w75rQsfJ7L4k%2Fgnkx0lzcbABvvjs2aKkrJwnC7XBTHwDZXzceHm6PgNJRG3NtGqWGypF2TuHsD6OwGUtKVPkUxkmweKW8Tx4UoQEQww%2FaEQGzZkqCfXDa3cEMrx2nxvTvjHqjjc1UVuubePx%2FxR6YrPWoGMoBnl2yxL3DIvyfRXXAyQiL5NSyKnxvMd%2Bv4PRBU2KjZaRaAlTcthnvKLDh8Ck18jqhX%2BCfx1XD9MQm3OW9xb8YOWbnqeFMEmqOdyOZhlPtHkpgmVMU1B0KXev7xPAzKgO%2BiWulyTTR46nPNpkDdcAZGeCgDGBn0%2F9VyjgrsgE624VCyVf0WAlDb6EMPmvD7l2fyvriOBDBUn1hQf%2FvyUPbWWiAkchv%2FMpYdSvB9LlKZxVHI%3D",
+      "status": 200,
+      "contentType": "application/json; charset=utf-8",
+      "bodyPreview": "{\"result\":\"0\",\"msg\":\"Sucesso\",\"operation\":\"/api/trade/platforms\",\"data\":\"mKqADksQ1bgb7CbvDT9BjIxgePZ9kGpNhdyP+e5XMsG2eUhYKruxOSmAu7cbOIqils23NXsDzyVCjWF3BT5Bxw04YoYPjmzNcypmRVouUhxPWEI+pCzyXT/jAROsdFp6AUPe/2CejpekBRkDMMuNScKPM9g+XM/lk+3ScyirIIkh3ZwxIuPHfnupgy5BPomMgoVbjW4JE8srNyhupoNMutuxd8xPgTNjOXkGvFL9fisAVgKWik6Pchx6nWzHFs/7o2Z+I4J1FqOJWM0TFTw2a81rBdNiEEQFiL+yOaYkFXjHe17OuzR6hLlps7X5xb5wzZQBpWNlpNPiYXM1VgpngarNL35xmNaljavNrvFpd7ssMSbfKGOobcJI47fuHXT+FtBAZlKpRc95Xl+gpsrxeaNrlafsQ77gEJkNtE33zuUkCx/UgiwoFCVDEUgfR9Wzapk1JJwpsEDnnu25g7vQ/5flk2v+OQl5cyaC+my42IccqLUck7zTc7eQLN3mIK4TrF8NJ4SgW4ShdPV95yBXrbDcBS83u70ie5fASVG0HCdklKRkaOiu7LqkJSjgHjFLrvctqhQMMvSLhRq9eHcuqg==\"}"
+    },
+    {
+      "url": "https://sapi.godapply.com/api/tradeBanner/listByType?param=%2F4xH2AlTDoZ4KvBVLzzEGuFXwB6JK1l20w75rQsfJ7L4k%2Fgnkx0lzcbABvvjs2aKkrJwnC7XBTHwDZXzceHm6FWstfpvpxhN0w%2FTuYTM0DeR6I9roB%2FhK%2FXtta2UOi5BHF%2FOeXbGeU%2BQWkNQrerU%2FfSE8LG2gOvdA%2F81n4Q%2B17AGq%2F99Ze0Ipt4d2qyxKZP9DaBvIvElsSvSUzvvMStB6BN5Es1qWrbZUtHdDrXRBVBAZs2jAwXNV9keuo%2FWdixwAu2GJghXknRvqKWhfm%2BeipfbhAcoIsRY1qA11xS2xDl3Q64cP%2FPnOBeJTlMOAxZEmMSArkKuyhnzWUy0UxUnQZz2Z37Y9dd2AaUea0Ssl1KsQXkmrTO8%2BzCCxKIoKHqsud8BUx0eSV4%2B7Zt0D8H5DBhvR4SmMT9JO937VS%2BHxJPiqZUkn7%2BurF9psSO0Gkd2ClT5801H%2BAatK8TiXmM%2BmA%3D%3D",
+      "status": 200,
+      "contentType": "application/json; charset=utf-8",
+      "bodyPreview": "{\"result\":\"0\",\"msg\":\"Sucesso\",\"operation\":\"/api/tradeBanner/listByType\",\"data\":\"NWHbrcUFBJjGdNjpCMeVE/0K0hi80gll49eE15WYIIa/y0pBWAunIop9sQUyxq7Pd+Uyn6tQI83yflvaDGtSj4dS/u1XCkJf/XqOgzyo1Se1UbD3ovkNJWkJlO+sqJMpJVTdXERp1BPbQP6fUpPXjqmpFQ8xxUUjAD9mtATrXdX+BzsYOnP+ZCDPJGV4iKLm2t24JSoif9yUX1XgqwLhM/MZGFf2zHPU3rhc3tB1FO0DSD1NXybLx+quvCRx8PKr02ILAYpIkJ6synpIkGS1CS0FyfjnMpXNzBAjXG4JJtzTmKvbu9eXlWuSCeCpdg7V905mEiWMGR9hf48c0WQ9yhXiUOO8nrMUbMNMvA31E7AabOGDgcsOmQqS11HAoq/+d65+CeiepERZRNLOLCnpkqQPqVGLTBi8GQLiCahm7ghJ/45YrSl5oDfIiS2heGUPUKf8Z7a/sjTQa0o0jRkdPBDi4UdxGPw3fDwDALR3eB/SI5f9gzppDdLZ3F9XGGc4\"}"
+    },
+    {
+      "url": "https://sapi.godapply.com/api/user/info?param=%2F4xH2AlTDoZ4KvBVLzzEGuFXwB6JK1l20w75rQsfJ7L4k%2Fgnkx0lzcbABvvjs2aKkrJwnC7XBTHwDZXzceHm6PgNJRG3NtGqWGypF2TuHsD6OwGUtKVPkUxkmweKW8Tx4UoQEQww%2FaEQGzZkqCfXDa3cEMrx2nxvTvjHqjjc1UVuubePx%2FxR6YrPWoGMoBnl2yxL3DIvyfRXXAyQiL5NSyKnxvMd%2Bv4PRBU2KjZaRaAlTcthnvKLDh8Ck18jqhX%2Bkc4M3l4EaOvRxRj2qjloU76HfKDDXjwI9zMGtwL9%2FbY2qVGwGM1RH47aRnSSHHirtR4r%2Fm4pJDxi9LO4IV0iCSSy4Vx1ontOSR8MBsuTb%2Bjrdi0THnlvSt4BfYr3f37ekhOGCxYNELHlxJnbaGYz%2FFSl4E%2FLPTs%2Bge39%2BtresVY%3D",
+      "status": 200,
+      "contentType": "application/json; charset=utf-8",
+      "bodyPreview": "{\"result\":\"0\",\"msg\":\"Sucesso\",\"operation\":\"/api/user/info\",\"data\":\"HF+kiuyLfgzrSRBmhWteU6L7EzW/SeVAx3Xdw8OssdnbeTIge2qAqkvYqfeAI46qhdwxJxSXGOTtb3G5NR2flQtZy4fFvBzRn9AplvlI1tJKv2A6CX6NwYrqm2SXZYPGiUtcxrgCfMCkZf2oA7wbE9+BxrhDr5hAJS9i/DWI337lOEv7H4x61tDpzIJvNv+i6k2GJ4Z9wfo7yigm4tD6cJQfcSzIQEULjuRVN3+7/Pgk2fUn1jBx5gVD5zkU/JJc+yEXgbc4mjsP7wiG8EcMCJgiOde+6tTTwRgZMK9e1OhBMaMwDovf5WAuU2b/f8aNIv3f8x87yAGaGrvUsWNE7N2fMqc7VTrqzKZsIJEq+TV6qcbSlTMgTfdvHadoG88hB1+Xs+/r7+YceC2oKXiVvuofTujh+89Y8nFURAnRwgRRMEfKjiMY2M1TP0cSFCdKnz4UDG274m7Qg+tnM+kMoDbTxfq3GQdLi7Q3+FR8OL2CziDxogHKBzO/AYuIKtokVldAfA+qEDoJiaNXDhXF43Q4ijFd8czhJwl4758aMJ8MRIodYbad2mBIGbrmC11e7AH8Rd5ejgK5Jm4g5WXjJeWkU9HrtRMoS13Zzi9KsKMRzBXc4OfkRDMekhMKp4gGovefETWjX4b+CVteEtP+Jo8xEZoY40acFgofWs/YiVEsSLogOK18x771KgQcCF2gRqD5gwCklW0M9V+ibFYa/ohf4mkxu/NYVw9yYkyfF1RR8Wx7VYgebq/VAdsW52eOAAO88xWO6SUXnYhVHHcwgLd3ZfPiyAJetkaxBuuWA3TvZsSTz1cwfmPFPocGqB7x57qNTRiYpd0Zpr6Ws0h4b2jEbqaO4+7uSivGHxGYwgPqKq+heU8VllO346/dUGOMXayjoldC3PgRehO+IDXR8t4ebMzTfuW/UYQGN6+P/yInFMLehsLBqHGb0fh2yZ0KIjWlyD8P5O+d10ctPxjci2V2C2L9j6T6XqFpTiGDNSdDiYv1Ya1tbD0PfEdOc8IngXn49IXQ/TxOYemW65F2czGLJYWq2UrF/YIlKPv1YUl/ZibDIKgKbrDY3Uhr9vD8f58YfiQqq2UGulZ/lwZ4FKfPUIOVki24DOOInn+Wm3EUc"
+    },
+    {
+      "url": "https://sapi.godapply.com/api/trade/buyCoin",
+      "status": 200,
+      "contentType": "application/json; charset=utf-8",
+      "bodyPreview": "{\"result\":\"0\",\"msg\":\"Sucesso\",\"operation\":\"/api/trade/buyCoin\",\"data\":\"q7dJ24ckmr2jaCiHe1cGyl+58piXWL8QLkE+pHPiQ1KAD0tPIRejlza58Bw6OG3FUxFdonDxmuLT3IRuOz7tIdnT1yQMUglrNA/XqvPJsPM6gLnqFSNDdJdib3j9f4nkMy3MysyOvluzMZp1nFjPoCZHWW6gWquaJQQYVvH0ML6j1sGFZy4lHRzwGxyzb6xjUjPK1IySwD/QMkY6l1bPAneRvF0pNU4tY7sxnBpooMzvavpaEkf1D/CIsX2ctPBy0aaAzGvGAfEDrP3cARvK4ML4oAhb4FRhm+Rs7heNCoaFfL9TE3pRJ84F0MjoaChORaUu80hpXgFHjmac7Zh7auh3emtKYwJZrbqtPfFBHSuJQxV4i+8epMCk8eSrCpTUNwU8HCGTU7XzZsR3hzVzpzGh7nIARi4+dCtrhGQ0vdq5qX87d9kbzWU7ui4NPqcLaMfYauRtge+UZ2vDWXlHlsk9b+t5l+GUyAIChrOle8sdNJQhVDIb7GRVQ7yTRdT3OZ857YxieLct0BAdZ1v22CEvWKeUmfVPqD/SN+M+pdg=\"}"
+    },
+    {
+      "url": "https://pix-n.transafe.co/payment/checkOrderPaid?sid=P_260515wbpcYQinbqEqGAOTVvyJ",
+      "status": 200,
+      "contentType": "application/json;charset=utf-8",
+      "bodyPreview": "{\"code\":200,\"result\":{\"keepCheck\":true,\"merchantOrderId\":\"347171947416653824\",\"orderId\":\"P_260515wbpcYQinbqEqGAOTVvyJ\"},\"msg\":null}"
+    },
+    {
+      "url": "https://pix-n.transafe.co/payment/checkOrderPaid?sid=P_260515wbpcYQinbqEqGAOTVvyJ",
+      "status": 200,
+      "contentType": "application/json;charset=utf-8",
+      "bodyPreview": "{\"code\":200,\"result\":{\"keepCheck\":true,\"merchantOrderId\":\"347171947416653824\",\"orderId\":\"P_260515wbpcYQinbqEqGAOTVvyJ\"},\"msg\":null}"
+    },
+    {
+      "url": "https://pix-n.transafe.co/payment/checkOrderPaid?sid=P_260515wbpcYQinbqEqGAOTVvyJ",
+      "status": 200,
+      "contentType": "application/json;charset=utf-8",
+      "bodyPreview": "{\"code\":200,\"result\":{\"keepCheck\":true,\"merchantOrderId\":\"347171947416653824\",\"orderId\":\"P_260515wbpcYQinbqEqGAOTVvyJ\"},\"msg\":null}"
+    }
+  ]
+}

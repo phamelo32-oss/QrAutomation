@@ -1,0 +1,366 @@
+import { createHotContext as __vite__createHotContext } from "/@vite/client";import.meta.hot = __vite__createHotContext("/src/components/tickets/StadiumMap.jsx");import __vite__cjsImport0_react_jsxDevRuntime from "/node_modules/.vite/deps/react_jsx-dev-runtime.js?v=9ee562b0"; const jsxDEV = __vite__cjsImport0_react_jsxDevRuntime["jsxDEV"];
+import { Maximize2, Minus, Plus } from "/node_modules/.vite/deps/lucide-react.js?v=9ee562b0";
+const areaToSector = {
+  arquibancada: "arquibancada",
+  "cadeira-superior": "cadeira-superior",
+  "cadeira-inferior": "cadeira-inferior",
+  "pista-norte": "pista",
+  "pista-sul": "pista",
+  "pista-leste": "pista",
+  "pista-oeste": "pista"
+};
+function areaClass(isSelected) {
+  return `cursor-pointer transition duration-150 ${isSelected ? "stroke-slate-950 stroke-[5] brightness-110" : "stroke-white/80 stroke-2 hover:brightness-105"}`;
+}
+function sectorLabel(x, y, title, subtitle, anchor = "start") {
+  return /* @__PURE__ */ jsxDEV("g", { className: "pointer-events-none", children: [
+    /* @__PURE__ */ jsxDEV("text", { x, y, textAnchor: anchor, fill: "#0f172a", fontSize: "16", fontWeight: "900", children: title }, void 0, false, {
+      fileName: "C:/dev/masterticket/front-end/src/components/tickets/StadiumMap.jsx",
+      lineNumber: 20,
+      columnNumber: 7
+    }, this),
+    /* @__PURE__ */ jsxDEV("text", { x, y: y + 19, textAnchor: anchor, fill: "#475569", fontSize: "12", fontWeight: "700", children: subtitle }, void 0, false, {
+      fileName: "C:/dev/masterticket/front-end/src/components/tickets/StadiumMap.jsx",
+      lineNumber: 23,
+      columnNumber: 7
+    }, this)
+  ] }, void 0, true, {
+    fileName: "C:/dev/masterticket/front-end/src/components/tickets/StadiumMap.jsx",
+    lineNumber: 19,
+    columnNumber: 5
+  }, this);
+}
+export default function StadiumMap({ selectedSectorId, zoom, onZoomIn, onZoomOut, onResetZoom, onSelectSector }) {
+  const selected = (areaId) => selectedSectorId === areaToSector[areaId];
+  return /* @__PURE__ */ jsxDEV("section", { className: "rounded-lg bg-white p-5 shadow-xl ring-1 ring-slate-200", children: [
+    /* @__PURE__ */ jsxDEV("div", { className: "mb-4 flex items-center justify-between gap-4", children: [
+      /* @__PURE__ */ jsxDEV("div", { children: [
+        /* @__PURE__ */ jsxDEV("h2", { className: "text-xl font-bold text-slate-900", children: "Mapa do estadio" }, void 0, false, {
+          fileName: "C:/dev/masterticket/front-end/src/components/tickets/StadiumMap.jsx",
+          lineNumber: 37,
+          columnNumber: 11
+        }, this),
+        /* @__PURE__ */ jsxDEV("p", { className: "text-sm text-slate-500", children: "Selecione uma area no mapa ou na tabela lateral." }, void 0, false, {
+          fileName: "C:/dev/masterticket/front-end/src/components/tickets/StadiumMap.jsx",
+          lineNumber: 38,
+          columnNumber: 11
+        }, this)
+      ] }, void 0, true, {
+        fileName: "C:/dev/masterticket/front-end/src/components/tickets/StadiumMap.jsx",
+        lineNumber: 36,
+        columnNumber: 9
+      }, this),
+      /* @__PURE__ */ jsxDEV("div", { className: "flex gap-2", children: [
+        /* @__PURE__ */ jsxDEV("button", { type: "button", onClick: onZoomOut, className: "map-tool", "aria-label": "Zoom out", children: /* @__PURE__ */ jsxDEV(Minus, { size: 18 }, void 0, false, {
+          fileName: "C:/dev/masterticket/front-end/src/components/tickets/StadiumMap.jsx",
+          lineNumber: 42,
+          columnNumber: 13
+        }, this) }, void 0, false, {
+          fileName: "C:/dev/masterticket/front-end/src/components/tickets/StadiumMap.jsx",
+          lineNumber: 41,
+          columnNumber: 11
+        }, this),
+        /* @__PURE__ */ jsxDEV("button", { type: "button", onClick: onResetZoom, className: "map-tool", "aria-label": "Reset zoom", children: /* @__PURE__ */ jsxDEV(Maximize2, { size: 18 }, void 0, false, {
+          fileName: "C:/dev/masterticket/front-end/src/components/tickets/StadiumMap.jsx",
+          lineNumber: 45,
+          columnNumber: 13
+        }, this) }, void 0, false, {
+          fileName: "C:/dev/masterticket/front-end/src/components/tickets/StadiumMap.jsx",
+          lineNumber: 44,
+          columnNumber: 11
+        }, this),
+        /* @__PURE__ */ jsxDEV("button", { type: "button", onClick: onZoomIn, className: "map-tool", "aria-label": "Zoom in", children: /* @__PURE__ */ jsxDEV(Plus, { size: 18 }, void 0, false, {
+          fileName: "C:/dev/masterticket/front-end/src/components/tickets/StadiumMap.jsx",
+          lineNumber: 48,
+          columnNumber: 13
+        }, this) }, void 0, false, {
+          fileName: "C:/dev/masterticket/front-end/src/components/tickets/StadiumMap.jsx",
+          lineNumber: 47,
+          columnNumber: 11
+        }, this)
+      ] }, void 0, true, {
+        fileName: "C:/dev/masterticket/front-end/src/components/tickets/StadiumMap.jsx",
+        lineNumber: 40,
+        columnNumber: 9
+      }, this)
+    ] }, void 0, true, {
+      fileName: "C:/dev/masterticket/front-end/src/components/tickets/StadiumMap.jsx",
+      lineNumber: 35,
+      columnNumber: 7
+    }, this),
+    /* @__PURE__ */ jsxDEV("div", { className: "overflow-hidden rounded-lg border border-slate-200 bg-[#eef2f8]", children: /* @__PURE__ */ jsxDEV("div", { className: "origin-center transition-transform duration-200", style: { transform: `scale(${zoom})` }, children: /* @__PURE__ */ jsxDEV("svg", { viewBox: "0 0 860 560", className: "mx-auto aspect-[860/560] w-full max-w-4xl", children: [
+      /* @__PURE__ */ jsxDEV("defs", { children: [
+        /* @__PURE__ */ jsxDEV("filter", { id: "mapShadow", x: "-20%", y: "-20%", width: "140%", height: "140%", children: /* @__PURE__ */ jsxDEV("feDropShadow", { dx: "0", dy: "8", stdDeviation: "10", floodColor: "#0f172a", floodOpacity: "0.16" }, void 0, false, {
+          fileName: "C:/dev/masterticket/front-end/src/components/tickets/StadiumMap.jsx",
+          lineNumber: 58,
+          columnNumber: 17
+        }, this) }, void 0, false, {
+          fileName: "C:/dev/masterticket/front-end/src/components/tickets/StadiumMap.jsx",
+          lineNumber: 57,
+          columnNumber: 15
+        }, this),
+        /* @__PURE__ */ jsxDEV("linearGradient", { id: "fieldGradient", x1: "0", x2: "1", children: [
+          /* @__PURE__ */ jsxDEV("stop", { offset: "0%", stopColor: "#e8fff8" }, void 0, false, {
+            fileName: "C:/dev/masterticket/front-end/src/components/tickets/StadiumMap.jsx",
+            lineNumber: 61,
+            columnNumber: 17
+          }, this),
+          /* @__PURE__ */ jsxDEV("stop", { offset: "100%", stopColor: "#d4fbec" }, void 0, false, {
+            fileName: "C:/dev/masterticket/front-end/src/components/tickets/StadiumMap.jsx",
+            lineNumber: 62,
+            columnNumber: 17
+          }, this)
+        ] }, void 0, true, {
+          fileName: "C:/dev/masterticket/front-end/src/components/tickets/StadiumMap.jsx",
+          lineNumber: 60,
+          columnNumber: 15
+        }, this)
+      ] }, void 0, true, {
+        fileName: "C:/dev/masterticket/front-end/src/components/tickets/StadiumMap.jsx",
+        lineNumber: 56,
+        columnNumber: 13
+      }, this),
+      /* @__PURE__ */ jsxDEV("rect", { width: "860", height: "560", fill: "#eef2f8" }, void 0, false, {
+        fileName: "C:/dev/masterticket/front-end/src/components/tickets/StadiumMap.jsx",
+        lineNumber: 65,
+        columnNumber: 13
+      }, this),
+      /* @__PURE__ */ jsxDEV("rect", { x: "46", y: "42", width: "768", height: "472", rx: "24", fill: "#f8fafc", stroke: "#d7e0ec" }, void 0, false, {
+        fileName: "C:/dev/masterticket/front-end/src/components/tickets/StadiumMap.jsx",
+        lineNumber: 66,
+        columnNumber: 13
+      }, this),
+      /* @__PURE__ */ jsxDEV("ellipse", { cx: "430", cy: "280", rx: "286", ry: "226", fill: "#f1f5f9" }, void 0, false, {
+        fileName: "C:/dev/masterticket/front-end/src/components/tickets/StadiumMap.jsx",
+        lineNumber: 67,
+        columnNumber: 13
+      }, this),
+      /* @__PURE__ */ jsxDEV(
+        "ellipse",
+        {
+          cx: "430",
+          cy: "280",
+          rx: "250",
+          ry: "202",
+          fill: "#ef2b2d",
+          className: areaClass(selected("arquibancada")),
+          onClick: () => onSelectSector("arquibancada")
+        },
+        void 0,
+        false,
+        {
+          fileName: "C:/dev/masterticket/front-end/src/components/tickets/StadiumMap.jsx",
+          lineNumber: 68,
+          columnNumber: 13
+        },
+        this
+      ),
+      /* @__PURE__ */ jsxDEV(
+        "ellipse",
+        {
+          cx: "430",
+          cy: "280",
+          rx: "212",
+          ry: "166",
+          fill: "#f4c430",
+          className: areaClass(selected("cadeira-superior")),
+          onClick: () => onSelectSector("cadeira-superior")
+        },
+        void 0,
+        false,
+        {
+          fileName: "C:/dev/masterticket/front-end/src/components/tickets/StadiumMap.jsx",
+          lineNumber: 77,
+          columnNumber: 13
+        },
+        this
+      ),
+      /* @__PURE__ */ jsxDEV(
+        "ellipse",
+        {
+          cx: "430",
+          cy: "280",
+          rx: "172",
+          ry: "132",
+          fill: "#13c8d3",
+          className: areaClass(selected("cadeira-inferior")),
+          onClick: () => onSelectSector("cadeira-inferior")
+        },
+        void 0,
+        false,
+        {
+          fileName: "C:/dev/masterticket/front-end/src/components/tickets/StadiumMap.jsx",
+          lineNumber: 86,
+          columnNumber: 13
+        },
+        this
+      ),
+      /* @__PURE__ */ jsxDEV("ellipse", { cx: "430", cy: "280", rx: "128", ry: "102", fill: "#ffffff", opacity: "0.9" }, void 0, false, {
+        fileName: "C:/dev/masterticket/front-end/src/components/tickets/StadiumMap.jsx",
+        lineNumber: 95,
+        columnNumber: 13
+      }, this),
+      /* @__PURE__ */ jsxDEV(
+        "ellipse",
+        {
+          cx: "430",
+          cy: "280",
+          rx: "116",
+          ry: "96",
+          fill: "#1f55df",
+          className: areaClass(selected("pista-norte")),
+          onClick: () => onSelectSector("pista")
+        },
+        void 0,
+        false,
+        {
+          fileName: "C:/dev/masterticket/front-end/src/components/tickets/StadiumMap.jsx",
+          lineNumber: 96,
+          columnNumber: 13
+        },
+        this
+      ),
+      /* @__PURE__ */ jsxDEV("g", { className: "pointer-events-none", children: [
+        /* @__PURE__ */ jsxDEV("text", { x: "430", y: "190", textAnchor: "middle", fill: "#ffffff", fontSize: "17", fontWeight: "900", children: "PISTA" }, void 0, false, {
+          fileName: "C:/dev/masterticket/front-end/src/components/tickets/StadiumMap.jsx",
+          lineNumber: 106,
+          columnNumber: 15
+        }, this),
+        /* @__PURE__ */ jsxDEV("text", { x: "430", y: "379", textAnchor: "middle", fill: "#ffffff", fontSize: "17", fontWeight: "900", children: "PISTA" }, void 0, false, {
+          fileName: "C:/dev/masterticket/front-end/src/components/tickets/StadiumMap.jsx",
+          lineNumber: 107,
+          columnNumber: 15
+        }, this),
+        /* @__PURE__ */ jsxDEV("text", { x: "340", y: "286", textAnchor: "middle", fill: "#ffffff", fontSize: "17", fontWeight: "900", children: "PISTA" }, void 0, false, {
+          fileName: "C:/dev/masterticket/front-end/src/components/tickets/StadiumMap.jsx",
+          lineNumber: 108,
+          columnNumber: 15
+        }, this),
+        /* @__PURE__ */ jsxDEV("text", { x: "520", y: "286", textAnchor: "middle", fill: "#ffffff", fontSize: "17", fontWeight: "900", children: "PISTA" }, void 0, false, {
+          fileName: "C:/dev/masterticket/front-end/src/components/tickets/StadiumMap.jsx",
+          lineNumber: 109,
+          columnNumber: 15
+        }, this)
+      ] }, void 0, true, {
+        fileName: "C:/dev/masterticket/front-end/src/components/tickets/StadiumMap.jsx",
+        lineNumber: 105,
+        columnNumber: 13
+      }, this),
+      /* @__PURE__ */ jsxDEV("g", { className: "pointer-events-none", filter: "url(#mapShadow)", children: [
+        /* @__PURE__ */ jsxDEV("path", { d: "M366 210 L388 200 L416 258 L444 258 L472 200 L494 210 L462 280 L494 350 L472 360 L444 302 L416 302 L388 360 L366 350 L398 280 Z", fill: "#111827" }, void 0, false, {
+          fileName: "C:/dev/masterticket/front-end/src/components/tickets/StadiumMap.jsx",
+          lineNumber: 112,
+          columnNumber: 15
+        }, this),
+        /* @__PURE__ */ jsxDEV("path", { d: "M354 214 L371 206 L399 263 L383 270 Z", fill: "#ffffff", opacity: "0.95" }, void 0, false, {
+          fileName: "C:/dev/masterticket/front-end/src/components/tickets/StadiumMap.jsx",
+          lineNumber: 113,
+          columnNumber: 15
+        }, this),
+        /* @__PURE__ */ jsxDEV("path", { d: "M506 214 L489 206 L461 263 L477 270 Z", fill: "#ffffff", opacity: "0.95" }, void 0, false, {
+          fileName: "C:/dev/masterticket/front-end/src/components/tickets/StadiumMap.jsx",
+          lineNumber: 114,
+          columnNumber: 15
+        }, this),
+        /* @__PURE__ */ jsxDEV("path", { d: "M354 346 L371 354 L399 297 L383 290 Z", fill: "#ffffff", opacity: "0.95" }, void 0, false, {
+          fileName: "C:/dev/masterticket/front-end/src/components/tickets/StadiumMap.jsx",
+          lineNumber: 115,
+          columnNumber: 15
+        }, this),
+        /* @__PURE__ */ jsxDEV("path", { d: "M506 346 L489 354 L461 297 L477 290 Z", fill: "#ffffff", opacity: "0.95" }, void 0, false, {
+          fileName: "C:/dev/masterticket/front-end/src/components/tickets/StadiumMap.jsx",
+          lineNumber: 116,
+          columnNumber: 15
+        }, this)
+      ] }, void 0, true, {
+        fileName: "C:/dev/masterticket/front-end/src/components/tickets/StadiumMap.jsx",
+        lineNumber: 111,
+        columnNumber: 13
+      }, this),
+      /* @__PURE__ */ jsxDEV("ellipse", { cx: "430", cy: "280", rx: "46", ry: "40", fill: "#111827" }, void 0, false, {
+        fileName: "C:/dev/masterticket/front-end/src/components/tickets/StadiumMap.jsx",
+        lineNumber: 118,
+        columnNumber: 13
+      }, this),
+      /* @__PURE__ */ jsxDEV("text", { x: "430", y: "286", textAnchor: "middle", fill: "#ffffff", fontSize: "18", fontWeight: "900", children: "PALCO" }, void 0, false, {
+        fileName: "C:/dev/masterticket/front-end/src/components/tickets/StadiumMap.jsx",
+        lineNumber: 119,
+        columnNumber: 13
+      }, this),
+      /* @__PURE__ */ jsxDEV("g", { className: "pointer-events-none", stroke: "#0f172a", strokeWidth: "2", fill: "none", children: [
+        /* @__PURE__ */ jsxDEV("path", { d: "M224 438 L166 488 H78" }, void 0, false, {
+          fileName: "C:/dev/masterticket/front-end/src/components/tickets/StadiumMap.jsx",
+          lineNumber: 123,
+          columnNumber: 15
+        }, this),
+        /* @__PURE__ */ jsxDEV("path", { d: "M610 171 L646 102 H720" }, void 0, false, {
+          fileName: "C:/dev/masterticket/front-end/src/components/tickets/StadiumMap.jsx",
+          lineNumber: 124,
+          columnNumber: 15
+        }, this),
+        /* @__PURE__ */ jsxDEV("path", { d: "M568 410 L624 464 H730" }, void 0, false, {
+          fileName: "C:/dev/masterticket/front-end/src/components/tickets/StadiumMap.jsx",
+          lineNumber: 125,
+          columnNumber: 15
+        }, this),
+        /* @__PURE__ */ jsxDEV("path", { d: "M548 278 L650 278 H716", strokeDasharray: "5 6", opacity: "0.75" }, void 0, false, {
+          fileName: "C:/dev/masterticket/front-end/src/components/tickets/StadiumMap.jsx",
+          lineNumber: 126,
+          columnNumber: 15
+        }, this)
+      ] }, void 0, true, {
+        fileName: "C:/dev/masterticket/front-end/src/components/tickets/StadiumMap.jsx",
+        lineNumber: 122,
+        columnNumber: 13
+      }, this),
+      sectorLabel(76, 508, "ARQUIBANCADA", "14 lugares"),
+      sectorLabel(724, 104, "CADEIRA", "SUPERIOR - 12 lugares"),
+      sectorLabel(734, 466, "CADEIRA", "INFERIOR - 10 lugares"),
+      sectorLabel(722, 276, "PISTA", "14 lugares")
+    ] }, void 0, true, {
+      fileName: "C:/dev/masterticket/front-end/src/components/tickets/StadiumMap.jsx",
+      lineNumber: 55,
+      columnNumber: 11
+    }, this) }, void 0, false, {
+      fileName: "C:/dev/masterticket/front-end/src/components/tickets/StadiumMap.jsx",
+      lineNumber: 54,
+      columnNumber: 9
+    }, this) }, void 0, false, {
+      fileName: "C:/dev/masterticket/front-end/src/components/tickets/StadiumMap.jsx",
+      lineNumber: 53,
+      columnNumber: 7
+    }, this)
+  ] }, void 0, true, {
+    fileName: "C:/dev/masterticket/front-end/src/components/tickets/StadiumMap.jsx",
+    lineNumber: 34,
+    columnNumber: 5
+  }, this);
+}
+_c = StadiumMap;
+var _c;
+$RefreshReg$(_c, "StadiumMap");
+import * as RefreshRuntime from "/@react-refresh";
+const inWebWorker = typeof WorkerGlobalScope !== "undefined" && self instanceof WorkerGlobalScope;
+if (import.meta.hot && !inWebWorker) {
+  if (!window.$RefreshReg$) {
+    throw new Error(
+      "@vitejs/plugin-react can't detect preamble. Something is wrong."
+    );
+  }
+  RefreshRuntime.__hmr_import(import.meta.url).then((currentExports) => {
+    RefreshRuntime.registerExportsForReactRefresh("C:/dev/masterticket/front-end/src/components/tickets/StadiumMap.jsx", currentExports);
+    import.meta.hot.accept((nextExports) => {
+      if (!nextExports) return;
+      const invalidateMessage = RefreshRuntime.validateRefreshBoundaryAndEnqueueUpdate("C:/dev/masterticket/front-end/src/components/tickets/StadiumMap.jsx", currentExports, nextExports);
+      if (invalidateMessage) import.meta.hot.invalidate(invalidateMessage);
+    });
+  });
+}
+function $RefreshReg$(type, id) {
+  return RefreshRuntime.register(type, "C:/dev/masterticket/front-end/src/components/tickets/StadiumMap.jsx " + id);
+}
+function $RefreshSig$() {
+  return RefreshRuntime.createSignatureFunctionForTransform();
+}
+
+//# sourceMappingURL=data:application/json;base64,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QUFBQSxNQUN6RCx1QkFBQyxVQUFLLEdBQUUsT0FBTSxHQUFFLE9BQU0sWUFBVyxVQUFTLE1BQUssV0FBVSxVQUFTLE1BQUssWUFBVyxPQUFLLHFCQUF2RjtBQUFBO0FBQUE7QUFBQTtBQUFBLGFBRUE7QUFBQSxNQUNBLHVCQUFDLE9BQUUsV0FBVSx1QkFBc0IsUUFBTyxXQUFVLGFBQVksS0FBSSxNQUFLLFFBQ3ZFO0FBQUEsK0JBQUMsVUFBSyxHQUFFLDJCQUFSO0FBQUE7QUFBQTtBQUFBO0FBQUEsZUFBK0I7QUFBQSxRQUMvQix1QkFBQyxVQUFLLEdBQUUsNEJBQVI7QUFBQTtBQUFBO0FBQUE7QUFBQSxlQUFnQztBQUFBLFFBQ2hDLHVCQUFDLFVBQUssR0FBRSw0QkFBUjtBQUFBO0FBQUE7QUFBQTtBQUFBLGVBQWdDO0FBQUEsUUFDaEMsdUJBQUMsVUFBSyxHQUFFLDBCQUF5QixpQkFBZ0IsT0FBTSxTQUFRLFVBQS9EO0FBQUE7QUFBQTtBQUFBO0FBQUEsZUFBcUU7QUFBQSxXQUp2RTtBQUFBO0FBQUE7QUFBQTtBQUFBLGFBS0E7QUFBQSxNQUNDWixZQUFZLElBQUksS0FBSyxnQkFBZ0IsWUFBWTtBQUFBLE1BQ2pEQSxZQUFZLEtBQUssS0FBSyxXQUFXLHVCQUF1QjtBQUFBLE1BQ3hEQSxZQUFZLEtBQUssS0FBSyxXQUFXLHVCQUF1QjtBQUFBLE1BQ3hEQSxZQUFZLEtBQUssS0FBSyxTQUFTLFlBQVk7QUFBQSxTQTVFOUM7QUFBQTtBQUFBO0FBQUE7QUFBQSxXQTZFQSxLQTlFRjtBQUFBO0FBQUE7QUFBQTtBQUFBLFdBK0VBLEtBaEZGO0FBQUE7QUFBQTtBQUFBO0FBQUEsV0FpRkE7QUFBQSxPQXBHRjtBQUFBO0FBQUE7QUFBQTtBQUFBLFNBcUdBO0FBRUo7QUFBQ2dCLEtBM0d1QlY7QUFBVSxJQUFBVTtBQUFBLGFBQUFBLElBQUEiLCJuYW1lcyI6WyJNYXhpbWl6ZTIiLCJNaW51cyIsIlBsdXMiLCJhcmVhVG9TZWN0b3IiLCJhcnF1aWJhbmNhZGEiLCJhcmVhQ2xhc3MiLCJpc1NlbGVjdGVkIiwic2VjdG9yTGFiZWwiLCJ4IiwieSIsInRpdGxlIiwic3VidGl0bGUiLCJhbmNob3IiLCJTdGFkaXVtTWFwIiwic2VsZWN0ZWRTZWN0b3JJZCIsInpvb20iLCJvblpvb21JbiIsIm9uWm9vbU91dCIsIm9uUmVzZXRab29tIiwib25TZWxlY3RTZWN0b3IiLCJzZWxlY3RlZCIsImFyZWFJZCIsInRyYW5zZm9ybSIsIl9jIl0sImlnbm9yZUxpc3QiOltdLCJzb3VyY2VzIjpbIlN0YWRpdW1NYXAuanN4Il0sInNvdXJjZXNDb250ZW50IjpbImltcG9ydCB7IE1heGltaXplMiwgTWludXMsIFBsdXMgfSBmcm9tIFwibHVjaWRlLXJlYWN0XCI7XG5cbmNvbnN0IGFyZWFUb1NlY3RvciA9IHtcbiAgYXJxdWliYW5jYWRhOiBcImFycXVpYmFuY2FkYVwiLFxuICBcImNhZGVpcmEtc3VwZXJpb3JcIjogXCJjYWRlaXJhLXN1cGVyaW9yXCIsXG4gIFwiY2FkZWlyYS1pbmZlcmlvclwiOiBcImNhZGVpcmEtaW5mZXJpb3JcIixcbiAgXCJwaXN0YS1ub3J0ZVwiOiBcInBpc3RhXCIsXG4gIFwicGlzdGEtc3VsXCI6IFwicGlzdGFcIixcbiAgXCJwaXN0YS1sZXN0ZVwiOiBcInBpc3RhXCIsXG4gIFwicGlzdGEtb2VzdGVcIjogXCJwaXN0YVwiLFxufTtcblxuZnVuY3Rpb24gYXJlYUNsYXNzKGlzU2VsZWN0ZWQpIHtcbiAgcmV0dXJuIGBjdXJzb3ItcG9pbnRlciB0cmFuc2l0aW9uIGR1cmF0aW9uLTE1MCAke2lzU2VsZWN0ZWQgPyBcInN0cm9rZS1zbGF0ZS05NTAgc3Ryb2tlLVs1XSBicmlnaHRuZXNzLTExMFwiIDogXCJzdHJva2Utd2hpdGUvODAgc3Ryb2tlLTIgaG92ZXI6YnJpZ2h0bmVzcy0xMDVcIn1gO1xufVxuXG5mdW5jdGlvbiBzZWN0b3JMYWJlbCh4LCB5LCB0aXRsZSwgc3VidGl0bGUsIGFuY2hvciA9IFwic3RhcnRcIikge1xuICByZXR1cm4gKFxuICAgIDxnIGNsYXNzTmFtZT1cInBvaW50ZXItZXZlbnRzLW5vbmVcIj5cbiAgICAgIDx0ZXh0IHg9e3h9IHk9e3l9IHRleHRBbmNob3I9e2FuY2hvcn0gZmlsbD1cIiMwZjE3MmFcIiBmb250U2l6ZT1cIjE2XCIgZm9udFdlaWdodD1cIjkwMFwiPlxuICAgICAgICB7dGl0bGV9XG4gICAgICA8L3RleHQ+XG4gICAgICA8dGV4dCB4PXt4fSB5PXt5ICsgMTl9IHRleHRBbmNob3I9e2FuY2hvcn0gZmlsbD1cIiM0NzU1NjlcIiBmb250U2l6ZT1cIjEyXCIgZm9udFdlaWdodD1cIjcwMFwiPlxuICAgICAgICB7c3VidGl0bGV9XG4gICAgICA8L3RleHQ+XG4gICAgPC9nPlxuICApO1xufVxuXG5leHBvcnQgZGVmYXVsdCBmdW5jdGlvbiBTdGFkaXVtTWFwKHsgc2VsZWN0ZWRTZWN0b3JJZCwgem9vbSwgb25ab29tSW4sIG9uWm9vbU91dCwgb25SZXNldFpvb20sIG9uU2VsZWN0U2VjdG9yIH0pIHtcbiAgY29uc3Qgc2VsZWN0ZWQgPSAoYXJlYUlkKSA9PiBzZWxlY3RlZFNlY3RvcklkID09PSBhcmVhVG9TZWN0b3JbYXJlYUlkXTtcblxuICByZXR1cm4gKFxuICAgIDxzZWN0aW9uIGNsYXNzTmFtZT1cInJvdW5kZWQtbGcgYmctd2hpdGUgcC01IHNoYWRvdy14bCByaW5nLTEgcmluZy1zbGF0ZS0yMDBcIj5cbiAgICAgIDxkaXYgY2xhc3NOYW1lPVwibWItNCBmbGV4IGl0ZW1zLWNlbnRlciBqdXN0aWZ5LWJldHdlZW4gZ2FwLTRcIj5cbiAgICAgICAgPGRpdj5cbiAgICAgICAgICA8aDIgY2xhc3NOYW1lPVwidGV4dC14bCBmb250LWJvbGQgdGV4dC1zbGF0ZS05MDBcIj5NYXBhIGRvIGVzdGFkaW88L2gyPlxuICAgICAgICAgIDxwIGNsYXNzTmFtZT1cInRleHQtc20gdGV4dC1zbGF0ZS01MDBcIj5TZWxlY2lvbmUgdW1hIGFyZWEgbm8gbWFwYSBvdSBuYSB0YWJlbGEgbGF0ZXJhbC48L3A+XG4gICAgICAgIDwvZGl2PlxuICAgICAgICA8ZGl2IGNsYXNzTmFtZT1cImZsZXggZ2FwLTJcIj5cbiAgICAgICAgICA8YnV0dG9uIHR5cGU9XCJidXR0b25cIiBvbkNsaWNrPXtvblpvb21PdXR9IGNsYXNzTmFtZT1cIm1hcC10b29sXCIgYXJpYS1sYWJlbD1cIlpvb20gb3V0XCI+XG4gICAgICAgICAgICA8TWludXMgc2l6ZT17MTh9IC8+XG4gICAgICAgICAgPC9idXR0b24+XG4gICAgICAgICAgPGJ1dHRvbiB0eXBlPVwiYnV0dG9uXCIgb25DbGljaz17b25SZXNldFpvb219IGNsYXNzTmFtZT1cIm1hcC10b29sXCIgYXJpYS1sYWJlbD1cIlJlc2V0IHpvb21cIj5cbiAgICAgICAgICAgIDxNYXhpbWl6ZTIgc2l6ZT17MTh9IC8+XG4gICAgICAgICAgPC9idXR0b24+XG4gICAgICAgICAgPGJ1dHRvbiB0eXBlPVwiYnV0dG9uXCIgb25DbGljaz17b25ab29tSW59IGNsYXNzTmFtZT1cIm1hcC10b29sXCIgYXJpYS1sYWJlbD1cIlpvb20gaW5cIj5cbiAgICAgICAgICAgIDxQbHVzIHNpemU9ezE4fSAvPlxuICAgICAgICAgIDwvYnV0dG9uPlxuICAgICAgICA8L2Rpdj5cbiAgICAgIDwvZGl2PlxuXG4gICAgICA8ZGl2IGNsYXNzTmFtZT1cIm92ZXJmbG93LWhpZGRlbiByb3VuZGVkLWxnIGJvcmRlciBib3JkZXItc2xhdGUtMjAwIGJnLVsjZWVmMmY4XVwiPlxuICAgICAgICA8ZGl2IGNsYXNzTmFtZT1cIm9yaWdpbi1jZW50ZXIgdHJhbnNpdGlvbi10cmFuc2Zvcm0gZHVyYXRpb24tMjAwXCIgc3R5bGU9e3sgdHJhbnNmb3JtOiBgc2NhbGUoJHt6b29tfSlgIH19PlxuICAgICAgICAgIDxzdmcgdmlld0JveD1cIjAgMCA4NjAgNTYwXCIgY2xhc3NOYW1lPVwibXgtYXV0byBhc3BlY3QtWzg2MC81NjBdIHctZnVsbCBtYXgtdy00eGxcIj5cbiAgICAgICAgICAgIDxkZWZzPlxuICAgICAgICAgICAgICA8ZmlsdGVyIGlkPVwibWFwU2hhZG93XCIgeD1cIi0yMCVcIiB5PVwiLTIwJVwiIHdpZHRoPVwiMTQwJVwiIGhlaWdodD1cIjE0MCVcIj5cbiAgICAgICAgICAgICAgICA8ZmVEcm9wU2hhZG93IGR4PVwiMFwiIGR5PVwiOFwiIHN0ZERldmlhdGlvbj1cIjEwXCIgZmxvb2RDb2xvcj1cIiMwZjE3MmFcIiBmbG9vZE9wYWNpdHk9XCIwLjE2XCIgLz5cbiAgICAgICAgICAgICAgPC9maWx0ZXI+XG4gICAgICAgICAgICAgIDxsaW5lYXJHcmFkaWVudCBpZD1cImZpZWxkR3JhZGllbnRcIiB4MT1cIjBcIiB4Mj1cIjFcIj5cbiAgICAgICAgICAgICAgICA8c3RvcCBvZmZzZXQ9XCIwJVwiIHN0b3BDb2xvcj1cIiNlOGZmZjhcIiAvPlxuICAgICAgICAgICAgICAgIDxzdG9wIG9mZnNldD1cIjEwMCVcIiBzdG9wQ29sb3I9XCIjZDRmYmVjXCIgLz5cbiAgICAgICAgICAgICAgPC9saW5lYXJHcmFkaWVudD5cbiAgICAgICAgICAgIDwvZGVmcz5cbiAgICAgICAgICAgIDxyZWN0IHdpZHRoPVwiODYwXCIgaGVpZ2h0PVwiNTYwXCIgZmlsbD1cIiNlZWYyZjhcIiAvPlxuICAgICAgICAgICAgPHJlY3QgeD1cIjQ2XCIgeT1cIjQyXCIgd2lkdGg9XCI3NjhcIiBoZWlnaHQ9XCI0NzJcIiByeD1cIjI0XCIgZmlsbD1cIiNmOGZhZmNcIiBzdHJva2U9XCIjZDdlMGVjXCIgLz5cbiAgICAgICAgICAgIDxlbGxpcHNlIGN4PVwiNDMwXCIgY3k9XCIyODBcIiByeD1cIjI4NlwiIHJ5PVwiMjI2XCIgZmlsbD1cIiNmMWY1ZjlcIiAvPlxuICAgICAgICAgICAgPGVsbGlwc2VcbiAgICAgICAgICAgICAgY3g9XCI0MzBcIlxuICAgICAgICAgICAgICBjeT1cIjI4MFwiXG4gICAgICAgICAgICAgIHJ4PVwiMjUwXCJcbiAgICAgICAgICAgICAgcnk9XCIyMDJcIlxuICAgICAgICAgICAgICBmaWxsPVwiI2VmMmIyZFwiXG4gICAgICAgICAgICAgIGNsYXNzTmFtZT17YXJlYUNsYXNzKHNlbGVjdGVkKFwiYXJxdWliYW5jYWRhXCIpKX1cbiAgICAgICAgICAgICAgb25DbGljaz17KCkgPT4gb25TZWxlY3RTZWN0b3IoXCJhcnF1aWJhbmNhZGFcIil9XG4gICAgICAgICAgICAvPlxuICAgICAgICAgICAgPGVsbGlwc2VcbiAgICAgICAgICAgICAgY3g9XCI0MzBcIlxuICAgICAgICAgICAgICBjeT1cIjI4MFwiXG4gICAgICAgICAgICAgIHJ4PVwiMjEyXCJcbiAgICAgICAgICAgICAgcnk9XCIxNjZcIlxuICAgICAgICAgICAgICBmaWxsPVwiI2Y0YzQzMFwiXG4gICAgICAgICAgICAgIGNsYXNzTmFtZT17YXJlYUNsYXNzKHNlbGVjdGVkKFwiY2FkZWlyYS1zdXBlcmlvclwiKSl9XG4gICAgICAgICAgICAgIG9uQ2xpY2s9eygpID0+IG9uU2VsZWN0U2VjdG9yKFwiY2FkZWlyYS1zdXBlcmlvclwiKX1cbiAgICAgICAgICAgIC8+XG4gICAgICAgICAgICA8ZWxsaXBzZVxuICAgICAgICAgICAgICBjeD1cIjQzMFwiXG4gICAgICAgICAgICAgIGN5PVwiMjgwXCJcbiAgICAgICAgICAgICAgcng9XCIxNzJcIlxuICAgICAgICAgICAgICByeT1cIjEzMlwiXG4gICAgICAgICAgICAgIGZpbGw9XCIjMTNjOGQzXCJcbiAgICAgICAgICAgICAgY2xhc3NOYW1lPXthcmVhQ2xhc3Moc2VsZWN0ZWQoXCJjYWRlaXJhLWluZmVyaW9yXCIpKX1cbiAgICAgICAgICAgICAgb25DbGljaz17KCkgPT4gb25TZWxlY3RTZWN0b3IoXCJjYWRlaXJhLWluZmVyaW9yXCIpfVxuICAgICAgICAgICAgLz5cbiAgICAgICAgICAgIDxlbGxpcHNlIGN4PVwiNDMwXCIgY3k9XCIyODBcIiByeD1cIjEyOFwiIHJ5PVwiMTAyXCIgZmlsbD1cIiNmZmZmZmZcIiBvcGFjaXR5PVwiMC45XCIgLz5cbiAgICAgICAgICAgIDxlbGxpcHNlXG4gICAgICAgICAgICAgIGN4PVwiNDMwXCJcbiAgICAgICAgICAgICAgY3k9XCIyODBcIlxuICAgICAgICAgICAgICByeD1cIjExNlwiXG4gICAgICAgICAgICAgIHJ5PVwiOTZcIlxuICAgICAgICAgICAgICBmaWxsPVwiIzFmNTVkZlwiXG4gICAgICAgICAgICAgIGNsYXNzTmFtZT17YXJlYUNsYXNzKHNlbGVjdGVkKFwicGlzdGEtbm9ydGVcIikpfVxuICAgICAgICAgICAgICBvbkNsaWNrPXsoKSA9PiBvblNlbGVjdFNlY3RvcihcInBpc3RhXCIpfVxuICAgICAgICAgICAgLz5cbiAgICAgICAgICAgIDxnIGNsYXNzTmFtZT1cInBvaW50ZXItZXZlbnRzLW5vbmVcIj5cbiAgICAgICAgICAgICAgPHRleHQgeD1cIjQzMFwiIHk9XCIxOTBcIiB0ZXh0QW5jaG9yPVwibWlkZGxlXCIgZmlsbD1cIiNmZmZmZmZcIiBmb250U2l6ZT1cIjE3XCIgZm9udFdlaWdodD1cIjkwMFwiPlBJU1RBPC90ZXh0PlxuICAgICAgICAgICAgICA8dGV4dCB4PVwiNDMwXCIgeT1cIjM3OVwiIHRleHRBbmNob3I9XCJtaWRkbGVcIiBmaWxsPVwiI2ZmZmZmZlwiIGZvbnRTaXplPVwiMTdcIiBmb250V2VpZ2h0PVwiOTAwXCI+UElTVEE8L3RleHQ+XG4gICAgICAgICAgICAgIDx0ZXh0IHg9XCIzNDBcIiB5PVwiMjg2XCIgdGV4dEFuY2hvcj1cIm1pZGRsZVwiIGZpbGw9XCIjZmZmZmZmXCIgZm9udFNpemU9XCIxN1wiIGZvbnRXZWlnaHQ9XCI5MDBcIj5QSVNUQTwvdGV4dD5cbiAgICAgICAgICAgICAgPHRleHQgeD1cIjUyMFwiIHk9XCIyODZcIiB0ZXh0QW5jaG9yPVwibWlkZGxlXCIgZmlsbD1cIiNmZmZmZmZcIiBmb250U2l6ZT1cIjE3XCIgZm9udFdlaWdodD1cIjkwMFwiPlBJU1RBPC90ZXh0PlxuICAgICAgICAgICAgPC9nPlxuICAgICAgICAgICAgPGcgY2xhc3NOYW1lPVwicG9pbnRlci1ldmVudHMtbm9uZVwiIGZpbHRlcj1cInVybCgjbWFwU2hhZG93KVwiPlxuICAgICAgICAgICAgICA8cGF0aCBkPVwiTTM2NiAyMTAgTDM4OCAyMDAgTDQxNiAyNTggTDQ0NCAyNTggTDQ3MiAyMDAgTDQ5NCAyMTAgTDQ2MiAyODAgTDQ5NCAzNTAgTDQ3MiAzNjAgTDQ0NCAzMDIgTDQxNiAzMDIgTDM4OCAzNjAgTDM2NiAzNTAgTDM5OCAyODAgWlwiIGZpbGw9XCIjMTExODI3XCIgLz5cbiAgICAgICAgICAgICAgPHBhdGggZD1cIk0zNTQgMjE0IEwzNzEgMjA2IEwzOTkgMjYzIEwzODMgMjcwIFpcIiBmaWxsPVwiI2ZmZmZmZlwiIG9wYWNpdHk9XCIwLjk1XCIgLz5cbiAgICAgICAgICAgICAgPHBhdGggZD1cIk01MDYgMjE0IEw0ODkgMjA2IEw0NjEgMjYzIEw0NzcgMjcwIFpcIiBmaWxsPVwiI2ZmZmZmZlwiIG9wYWNpdHk9XCIwLjk1XCIgLz5cbiAgICAgICAgICAgICAgPHBhdGggZD1cIk0zNTQgMzQ2IEwzNzEgMzU0IEwzOTkgMjk3IEwzODMgMjkwIFpcIiBmaWxsPVwiI2ZmZmZmZlwiIG9wYWNpdHk9XCIwLjk1XCIgLz5cbiAgICAgICAgICAgICAgPHBhdGggZD1cIk01MDYgMzQ2IEw0ODkgMzU0IEw0NjEgMjk3IEw0NzcgMjkwIFpcIiBmaWxsPVwiI2ZmZmZmZlwiIG9wYWNpdHk9XCIwLjk1XCIgLz5cbiAgICAgICAgICAgIDwvZz5cbiAgICAgICAgICAgIDxlbGxpcHNlIGN4PVwiNDMwXCIgY3k9XCIyODBcIiByeD1cIjQ2XCIgcnk9XCI0MFwiIGZpbGw9XCIjMTExODI3XCIgLz5cbiAgICAgICAgICAgIDx0ZXh0IHg9XCI0MzBcIiB5PVwiMjg2XCIgdGV4dEFuY2hvcj1cIm1pZGRsZVwiIGZpbGw9XCIjZmZmZmZmXCIgZm9udFNpemU9XCIxOFwiIGZvbnRXZWlnaHQ9XCI5MDBcIj5cbiAgICAgICAgICAgICAgUEFMQ09cbiAgICAgICAgICAgIDwvdGV4dD5cbiAgICAgICAgICAgIDxnIGNsYXNzTmFtZT1cInBvaW50ZXItZXZlbnRzLW5vbmVcIiBzdHJva2U9XCIjMGYxNzJhXCIgc3Ryb2tlV2lkdGg9XCIyXCIgZmlsbD1cIm5vbmVcIj5cbiAgICAgICAgICAgICAgPHBhdGggZD1cIk0yMjQgNDM4IEwxNjYgNDg4IEg3OFwiIC8+XG4gICAgICAgICAgICAgIDxwYXRoIGQ9XCJNNjEwIDE3MSBMNjQ2IDEwMiBINzIwXCIgLz5cbiAgICAgICAgICAgICAgPHBhdGggZD1cIk01NjggNDEwIEw2MjQgNDY0IEg3MzBcIiAvPlxuICAgICAgICAgICAgICA8cGF0aCBkPVwiTTU0OCAyNzggTDY1MCAyNzggSDcxNlwiIHN0cm9rZURhc2hhcnJheT1cIjUgNlwiIG9wYWNpdHk9XCIwLjc1XCIgLz5cbiAgICAgICAgICAgIDwvZz5cbiAgICAgICAgICAgIHtzZWN0b3JMYWJlbCg3NiwgNTA4LCBcIkFSUVVJQkFOQ0FEQVwiLCBcIjE0IGx1Z2FyZXNcIil9XG4gICAgICAgICAgICB7c2VjdG9yTGFiZWwoNzI0LCAxMDQsIFwiQ0FERUlSQVwiLCBcIlNVUEVSSU9SIC0gMTIgbHVnYXJlc1wiKX1cbiAgICAgICAgICAgIHtzZWN0b3JMYWJlbCg3MzQsIDQ2NiwgXCJDQURFSVJBXCIsIFwiSU5GRVJJT1IgLSAxMCBsdWdhcmVzXCIpfVxuICAgICAgICAgICAge3NlY3RvckxhYmVsKDcyMiwgMjc2LCBcIlBJU1RBXCIsIFwiMTQgbHVnYXJlc1wiKX1cbiAgICAgICAgICA8L3N2Zz5cbiAgICAgICAgPC9kaXY+XG4gICAgICA8L2Rpdj5cbiAgICA8L3NlY3Rpb24+XG4gICk7XG59XG4iXSwiZmlsZSI6IkM6L2Rldi9tYXN0ZXJ0aWNrZXQvZnJvbnQtZW5kL3NyYy9jb21wb25lbnRzL3RpY2tldHMvU3RhZGl1bU1hcC5qc3gifQ==

@@ -1,0 +1,24 @@
+{
+  "name": "topup-qr-automation",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "tsx src/index.ts",
+    "start": "node dist/index.js",
+    "build": "tsc --project tsconfig.json",
+    "check": "tsc --noEmit"
+  },
+  "dependencies": {
+    "express": "^4.21.2",
+    "playwright": "^1.52.0",
+    "qrcode": "^1.5.4"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.21",
+    "@types/node": "^22.10.2",
+    "@types/qrcode": "^1.5.6",
+    "tsx": "^4.19.2",
+    "typescript": "^5.7.2"
+  }
+}

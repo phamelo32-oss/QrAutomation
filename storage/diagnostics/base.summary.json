@@ -1,0 +1,24 @@
+{
+  "url": "https://e66fun.com/#/home",
+  "title": "E66 -Melhores máquinas caça-níqueis de cassino online",
+  "inputs": [
+    {
+      "index": 0,
+      "tag": "input",
+      "type": "text",
+      "name": null,
+      "id": null,
+      "className": null,
+      "placeholder": "",
+      "valueLength": 0,
+      "visibleText": null
+    }
+  ],
+  "buttons": [],
+  "selectorCounts": {
+    "loginItemInput": 0,
+    "signupEnable": 0,
+    "signupDisable": 0,
+    "inputAmount": 0
+  }
+}

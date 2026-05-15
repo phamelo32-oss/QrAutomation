@@ -1,0 +1,41 @@
+{
+  "url": "https://e66fun.com/#/sd-topup",
+  "title": "E66 -Melhores máquinas caça-níqueis de cassino online",
+  "inputs": [
+    {
+      "index": 0,
+      "tag": "input",
+      "type": "number",
+      "name": null,
+      "id": "input-amount",
+      "className": "input",
+      "placeholder": "valor(10 ~ 15000)",
+      "valueLength": 0,
+      "visibleText": null
+    }
+  ],
+  "buttons": [
+    {
+      "index": 0,
+      "tag": "div",
+      "href": null,
+      "id": null,
+      "className": "signup-item-signup-disable",
+      "text": "Depósito"
+    },
+    {
+      "index": 1,
+      "tag": "div",
+      "href": null,
+      "id": null,
+      "className": "signup-item-signup-enable",
+      "text": "Depósito"
+    }
+  ],
+  "selectorCounts": {
+    "loginItemInput": 0,
+    "signupEnable": 1,
+    "signupDisable": 1,
+    "inputAmount": 0
+  }
+}

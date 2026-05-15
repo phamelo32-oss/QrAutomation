@@ -1,0 +1,18 @@
+2026/05/15-14:36:55.750 5a24 Reusing MANIFEST C:\dev\pw\storage\browser-profile\Default\Local Storage\leveldb/MANIFEST-000001
+2026/05/15-14:36:55.755 5a24 Recovering log #21
+2026/05/15-14:36:55.757 5a24 Reusing old log C:\dev\pw\storage\browser-profile\Default\Local Storage\leveldb/000021.log 
+2026/05/15-14:47:15.705 5390 Level-0 table #25: started
+2026/05/15-14:47:15.760 5390 Level-0 table #25: 222581 bytes OK
+2026/05/15-14:47:15.763 5390 Delete type=0 #21
+2026/05/15-14:47:15.764 5390 Compacting 4@0 + 1@1 files
+2026/05/15-14:47:15.780 5390 Generated table #26@0: 53 keys, 222113 bytes
+2026/05/15-14:47:15.780 5390 Compacted 4@0 + 1@1 files => 222113 bytes
+2026/05/15-14:47:15.782 5390 compacted to: files[ 0 1 0 0 0 0 0 ]
+2026/05/15-14:47:15.783 5390 Delete type=2 #13
+2026/05/15-14:47:15.783 5390 Delete type=2 #15
+2026/05/15-14:47:15.783 5390 Delete type=2 #19
+2026/05/15-14:47:15.783 5390 Delete type=2 #22
+2026/05/15-14:47:15.783 5390 Delete type=2 #25
+2026/05/15-15:44:51.161 5a24 Level-0 table #28: started
+2026/05/15-15:44:51.170 5a24 Level-0 table #28: 223305 bytes OK
+2026/05/15-15:44:51.174 5a24 Delete type=0 #24

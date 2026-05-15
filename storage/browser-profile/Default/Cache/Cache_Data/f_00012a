@@ -1,0 +1,220 @@
+import { createHotContext as __vite__createHotContext } from "/@vite/client";import.meta.hot = __vite__createHotContext("/src/components/payment/CreditCardForm.jsx");import __vite__cjsImport0_react_jsxDevRuntime from "/node_modules/.vite/deps/react_jsx-dev-runtime.js?v=9ee562b0"; const jsxDEV = __vite__cjsImport0_react_jsxDevRuntime["jsxDEV"];
+import { formatCardNumber, formatExpiry, onlyDigits } from "/src/utils/formatters.js";
+export default function CreditCardForm({ card, errors, onChange }) {
+  return /* @__PURE__ */ jsxDEV("div", { className: "mt-5 grid gap-4", children: [
+    /* @__PURE__ */ jsxDEV("label", { className: "block", children: [
+      /* @__PURE__ */ jsxDEV("span", { className: "text-sm font-semibold text-slate-700", children: "Numero do cartao" }, void 0, false, {
+        fileName: "C:/dev/masterticket/front-end/src/components/payment/CreditCardForm.jsx",
+        lineNumber: 7,
+        columnNumber: 9
+      }, this),
+      /* @__PURE__ */ jsxDEV(
+        "input",
+        {
+          value: card.number,
+          onChange: (event) => onChange("number", formatCardNumber(event.target.value)),
+          placeholder: "4111 1111 1111 1111",
+          className: "mt-2 h-12 w-full rounded-md border border-slate-200 px-4 outline-none focus:border-brand-primary"
+        },
+        void 0,
+        false,
+        {
+          fileName: "C:/dev/masterticket/front-end/src/components/payment/CreditCardForm.jsx",
+          lineNumber: 8,
+          columnNumber: 9
+        },
+        this
+      ),
+      errors.number && /* @__PURE__ */ jsxDEV("span", { className: "mt-1 block text-xs font-medium text-red-600", children: errors.number }, void 0, false, {
+        fileName: "C:/dev/masterticket/front-end/src/components/payment/CreditCardForm.jsx",
+        lineNumber: 14,
+        columnNumber: 27
+      }, this)
+    ] }, void 0, true, {
+      fileName: "C:/dev/masterticket/front-end/src/components/payment/CreditCardForm.jsx",
+      lineNumber: 6,
+      columnNumber: 7
+    }, this),
+    /* @__PURE__ */ jsxDEV("div", { className: "grid gap-4 md:grid-cols-2", children: [
+      /* @__PURE__ */ jsxDEV("label", { className: "block", children: [
+        /* @__PURE__ */ jsxDEV("span", { className: "text-sm font-semibold text-slate-700", children: "Validade" }, void 0, false, {
+          fileName: "C:/dev/masterticket/front-end/src/components/payment/CreditCardForm.jsx",
+          lineNumber: 19,
+          columnNumber: 11
+        }, this),
+        /* @__PURE__ */ jsxDEV(
+          "input",
+          {
+            value: card.expiry,
+            onChange: (event) => onChange("expiry", formatExpiry(event.target.value)),
+            placeholder: "MM/AA",
+            className: "mt-2 h-12 w-full rounded-md border border-slate-200 px-4 outline-none focus:border-brand-primary"
+          },
+          void 0,
+          false,
+          {
+            fileName: "C:/dev/masterticket/front-end/src/components/payment/CreditCardForm.jsx",
+            lineNumber: 20,
+            columnNumber: 11
+          },
+          this
+        ),
+        errors.expiry && /* @__PURE__ */ jsxDEV("span", { className: "mt-1 block text-xs font-medium text-red-600", children: errors.expiry }, void 0, false, {
+          fileName: "C:/dev/masterticket/front-end/src/components/payment/CreditCardForm.jsx",
+          lineNumber: 26,
+          columnNumber: 29
+        }, this)
+      ] }, void 0, true, {
+        fileName: "C:/dev/masterticket/front-end/src/components/payment/CreditCardForm.jsx",
+        lineNumber: 18,
+        columnNumber: 9
+      }, this),
+      /* @__PURE__ */ jsxDEV("label", { className: "block", children: [
+        /* @__PURE__ */ jsxDEV("span", { className: "text-sm font-semibold text-slate-700", children: "CVV" }, void 0, false, {
+          fileName: "C:/dev/masterticket/front-end/src/components/payment/CreditCardForm.jsx",
+          lineNumber: 29,
+          columnNumber: 11
+        }, this),
+        /* @__PURE__ */ jsxDEV(
+          "input",
+          {
+            value: card.cvv,
+            onChange: (event) => onChange("cvv", onlyDigits(event.target.value).slice(0, 4)),
+            placeholder: "123",
+            className: "mt-2 h-12 w-full rounded-md border border-slate-200 px-4 outline-none focus:border-brand-primary"
+          },
+          void 0,
+          false,
+          {
+            fileName: "C:/dev/masterticket/front-end/src/components/payment/CreditCardForm.jsx",
+            lineNumber: 30,
+            columnNumber: 11
+          },
+          this
+        ),
+        errors.cvv && /* @__PURE__ */ jsxDEV("span", { className: "mt-1 block text-xs font-medium text-red-600", children: errors.cvv }, void 0, false, {
+          fileName: "C:/dev/masterticket/front-end/src/components/payment/CreditCardForm.jsx",
+          lineNumber: 36,
+          columnNumber: 26
+        }, this)
+      ] }, void 0, true, {
+        fileName: "C:/dev/masterticket/front-end/src/components/payment/CreditCardForm.jsx",
+        lineNumber: 28,
+        columnNumber: 9
+      }, this)
+    ] }, void 0, true, {
+      fileName: "C:/dev/masterticket/front-end/src/components/payment/CreditCardForm.jsx",
+      lineNumber: 17,
+      columnNumber: 7
+    }, this),
+    /* @__PURE__ */ jsxDEV("label", { className: "block", children: [
+      /* @__PURE__ */ jsxDEV("span", { className: "text-sm font-semibold text-slate-700", children: "Nome impresso no cartao" }, void 0, false, {
+        fileName: "C:/dev/masterticket/front-end/src/components/payment/CreditCardForm.jsx",
+        lineNumber: 41,
+        columnNumber: 9
+      }, this),
+      /* @__PURE__ */ jsxDEV(
+        "input",
+        {
+          value: card.name,
+          onChange: (event) => onChange("name", event.target.value),
+          placeholder: "Como aparece no cartao",
+          className: "mt-2 h-12 w-full rounded-md border border-slate-200 px-4 outline-none focus:border-brand-primary"
+        },
+        void 0,
+        false,
+        {
+          fileName: "C:/dev/masterticket/front-end/src/components/payment/CreditCardForm.jsx",
+          lineNumber: 42,
+          columnNumber: 9
+        },
+        this
+      ),
+      errors.name && /* @__PURE__ */ jsxDEV("span", { className: "mt-1 block text-xs font-medium text-red-600", children: errors.name }, void 0, false, {
+        fileName: "C:/dev/masterticket/front-end/src/components/payment/CreditCardForm.jsx",
+        lineNumber: 48,
+        columnNumber: 25
+      }, this)
+    ] }, void 0, true, {
+      fileName: "C:/dev/masterticket/front-end/src/components/payment/CreditCardForm.jsx",
+      lineNumber: 40,
+      columnNumber: 7
+    }, this),
+    /* @__PURE__ */ jsxDEV("label", { className: "block", children: [
+      /* @__PURE__ */ jsxDEV("span", { className: "text-sm font-semibold text-slate-700", children: "Parcelamento" }, void 0, false, {
+        fileName: "C:/dev/masterticket/front-end/src/components/payment/CreditCardForm.jsx",
+        lineNumber: 52,
+        columnNumber: 9
+      }, this),
+      /* @__PURE__ */ jsxDEV(
+        "select",
+        {
+          value: card.installments,
+          onChange: (event) => onChange("installments", event.target.value),
+          className: "mt-2 h-12 w-full rounded-md border border-slate-200 bg-white px-4 outline-none focus:border-brand-primary",
+          children: [
+            /* @__PURE__ */ jsxDEV("option", { value: "1", children: "1x sem juros" }, void 0, false, {
+              fileName: "C:/dev/masterticket/front-end/src/components/payment/CreditCardForm.jsx",
+              lineNumber: 58,
+              columnNumber: 11
+            }, this),
+            /* @__PURE__ */ jsxDEV("option", { value: "2", children: "2x sem juros" }, void 0, false, {
+              fileName: "C:/dev/masterticket/front-end/src/components/payment/CreditCardForm.jsx",
+              lineNumber: 59,
+              columnNumber: 11
+            }, this),
+            /* @__PURE__ */ jsxDEV("option", { value: "3", children: "3x sem juros" }, void 0, false, {
+              fileName: "C:/dev/masterticket/front-end/src/components/payment/CreditCardForm.jsx",
+              lineNumber: 60,
+              columnNumber: 11
+            }, this)
+          ]
+        },
+        void 0,
+        true,
+        {
+          fileName: "C:/dev/masterticket/front-end/src/components/payment/CreditCardForm.jsx",
+          lineNumber: 53,
+          columnNumber: 9
+        },
+        this
+      )
+    ] }, void 0, true, {
+      fileName: "C:/dev/masterticket/front-end/src/components/payment/CreditCardForm.jsx",
+      lineNumber: 51,
+      columnNumber: 7
+    }, this)
+  ] }, void 0, true, {
+    fileName: "C:/dev/masterticket/front-end/src/components/payment/CreditCardForm.jsx",
+    lineNumber: 5,
+    columnNumber: 5
+  }, this);
+}
+_c = CreditCardForm;
+var _c;
+$RefreshReg$(_c, "CreditCardForm");
+import * as RefreshRuntime from "/@react-refresh";
+const inWebWorker = typeof WorkerGlobalScope !== "undefined" && self instanceof WorkerGlobalScope;
+if (import.meta.hot && !inWebWorker) {
+  if (!window.$RefreshReg$) {
+    throw new Error(
+      "@vitejs/plugin-react can't detect preamble. Something is wrong."
+    );
+  }
+  RefreshRuntime.__hmr_import(import.meta.url).then((currentExports) => {
+    RefreshRuntime.registerExportsForReactRefresh("C:/dev/masterticket/front-end/src/components/payment/CreditCardForm.jsx", currentExports);
+    import.meta.hot.accept((nextExports) => {
+      if (!nextExports) return;
+      const invalidateMessage = RefreshRuntime.validateRefreshBoundaryAndEnqueueUpdate("C:/dev/masterticket/front-end/src/components/payment/CreditCardForm.jsx", currentExports, nextExports);
+      if (invalidateMessage) import.meta.hot.invalidate(invalidateMessage);
+    });
+  });
+}
+function $RefreshReg$(type, id) {
+  return RefreshRuntime.register(type, "C:/dev/masterticket/front-end/src/components/payment/CreditCardForm.jsx " + id);
+}
+function $RefreshSig$() {
+  return RefreshRuntime.createSignatureFunctionForTransform();
+}
+
+//# sourceMappingURL=data:application/json;base64,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QUFDLFVBQUssV0FBVSwrQ0FBK0NULGlCQUFPUyxRQUF0RTtBQUFBO0FBQUE7QUFBQTtBQUFBLGFBQTJFO0FBQUEsU0FSN0Y7QUFBQTtBQUFBO0FBQUE7QUFBQSxXQVNBO0FBQUEsSUFFQSx1QkFBQyxXQUFNLFdBQVUsU0FDZjtBQUFBLDZCQUFDLFVBQUssV0FBVSx3Q0FBdUMsNEJBQXZEO0FBQUE7QUFBQTtBQUFBO0FBQUEsYUFBbUU7QUFBQSxNQUNuRTtBQUFBLFFBQUM7QUFBQTtBQUFBLFVBQ0MsT0FBT1YsS0FBS1c7QUFBQUEsVUFDWixVQUFVLENBQUNQLFVBQVVGLFNBQVMsZ0JBQWdCRSxNQUFNQyxPQUFPQyxLQUFLO0FBQUEsVUFDaEUsV0FBVTtBQUFBLFVBRVY7QUFBQSxtQ0FBQyxZQUFPLE9BQU0sS0FBSSw0QkFBbEI7QUFBQTtBQUFBO0FBQUE7QUFBQSxtQkFBOEI7QUFBQSxZQUM5Qix1QkFBQyxZQUFPLE9BQU0sS0FBSSw0QkFBbEI7QUFBQTtBQUFBO0FBQUE7QUFBQSxtQkFBOEI7QUFBQSxZQUM5Qix1QkFBQyxZQUFPLE9BQU0sS0FBSSw0QkFBbEI7QUFBQTtBQUFBO0FBQUE7QUFBQSxtQkFBOEI7QUFBQTtBQUFBO0FBQUEsUUFQaEM7QUFBQTtBQUFBO0FBQUE7QUFBQTtBQUFBO0FBQUE7QUFBQTtBQUFBLE1BUUE7QUFBQSxTQVZGO0FBQUE7QUFBQTtBQUFBO0FBQUEsV0FXQTtBQUFBLE9BekRGO0FBQUE7QUFBQTtBQUFBO0FBQUEsU0EwREE7QUFFSjtBQUFDTSxLQTlEdUJiO0FBQWMsSUFBQWE7QUFBQSxhQUFBQSxJQUFBIiwibmFtZXMiOlsiZm9ybWF0Q2FyZE51bWJlciIsImZvcm1hdEV4cGlyeSIsIm9ubHlEaWdpdHMiLCJDcmVkaXRDYXJkRm9ybSIsImNhcmQiLCJlcnJvcnMiLCJvbkNoYW5nZSIsIm51bWJlciIsImV2ZW50IiwidGFyZ2V0IiwidmFsdWUiLCJleHBpcnkiLCJjdnYiLCJzbGljZSIsIm5hbWUiLCJpbnN0YWxsbWVudHMiLCJfYyJdLCJpZ25vcmVMaXN0IjpbXSwic291cmNlcyI6WyJDcmVkaXRDYXJkRm9ybS5qc3giXSwic291cmNlc0NvbnRlbnQiOlsiaW1wb3J0IHsgZm9ybWF0Q2FyZE51bWJlciwgZm9ybWF0RXhwaXJ5LCBvbmx5RGlnaXRzIH0gZnJvbSBcIi4uLy4uL3V0aWxzL2Zvcm1hdHRlcnNcIjtcblxuZXhwb3J0IGRlZmF1bHQgZnVuY3Rpb24gQ3JlZGl0Q2FyZEZvcm0oeyBjYXJkLCBlcnJvcnMsIG9uQ2hhbmdlIH0pIHtcbiAgcmV0dXJuIChcbiAgICA8ZGl2IGNsYXNzTmFtZT1cIm10LTUgZ3JpZCBnYXAtNFwiPlxuICAgICAgPGxhYmVsIGNsYXNzTmFtZT1cImJsb2NrXCI+XG4gICAgICAgIDxzcGFuIGNsYXNzTmFtZT1cInRleHQtc20gZm9udC1zZW1pYm9sZCB0ZXh0LXNsYXRlLTcwMFwiPk51bWVybyBkbyBjYXJ0YW88L3NwYW4+XG4gICAgICAgIDxpbnB1dFxuICAgICAgICAgIHZhbHVlPXtjYXJkLm51bWJlcn1cbiAgICAgICAgICBvbkNoYW5nZT17KGV2ZW50KSA9PiBvbkNoYW5nZShcIm51bWJlclwiLCBmb3JtYXRDYXJkTnVtYmVyKGV2ZW50LnRhcmdldC52YWx1ZSkpfVxuICAgICAgICAgIHBsYWNlaG9sZGVyPVwiNDExMSAxMTExIDExMTEgMTExMVwiXG4gICAgICAgICAgY2xhc3NOYW1lPVwibXQtMiBoLTEyIHctZnVsbCByb3VuZGVkLW1kIGJvcmRlciBib3JkZXItc2xhdGUtMjAwIHB4LTQgb3V0bGluZS1ub25lIGZvY3VzOmJvcmRlci1icmFuZC1wcmltYXJ5XCJcbiAgICAgICAgLz5cbiAgICAgICAge2Vycm9ycy5udW1iZXIgJiYgPHNwYW4gY2xhc3NOYW1lPVwibXQtMSBibG9jayB0ZXh0LXhzIGZvbnQtbWVkaXVtIHRleHQtcmVkLTYwMFwiPntlcnJvcnMubnVtYmVyfTwvc3Bhbj59XG4gICAgICA8L2xhYmVsPlxuXG4gICAgICA8ZGl2IGNsYXNzTmFtZT1cImdyaWQgZ2FwLTQgbWQ6Z3JpZC1jb2xzLTJcIj5cbiAgICAgICAgPGxhYmVsIGNsYXNzTmFtZT1cImJsb2NrXCI+XG4gICAgICAgICAgPHNwYW4gY2xhc3NOYW1lPVwidGV4dC1zbSBmb250LXNlbWlib2xkIHRleHQtc2xhdGUtNzAwXCI+VmFsaWRhZGU8L3NwYW4+XG4gICAgICAgICAgPGlucHV0XG4gICAgICAgICAgICB2YWx1ZT17Y2FyZC5leHBpcnl9XG4gICAgICAgICAgICBvbkNoYW5nZT17KGV2ZW50KSA9PiBvbkNoYW5nZShcImV4cGlyeVwiLCBmb3JtYXRFeHBpcnkoZXZlbnQudGFyZ2V0LnZhbHVlKSl9XG4gICAgICAgICAgICBwbGFjZWhvbGRlcj1cIk1NL0FBXCJcbiAgICAgICAgICAgIGNsYXNzTmFtZT1cIm10LTIgaC0xMiB3LWZ1bGwgcm91bmRlZC1tZCBib3JkZXIgYm9yZGVyLXNsYXRlLTIwMCBweC00IG91dGxpbmUtbm9uZSBmb2N1czpib3JkZXItYnJhbmQtcHJpbWFyeVwiXG4gICAgICAgICAgLz5cbiAgICAgICAgICB7ZXJyb3JzLmV4cGlyeSAmJiA8c3BhbiBjbGFzc05hbWU9XCJtdC0xIGJsb2NrIHRleHQteHMgZm9udC1tZWRpdW0gdGV4dC1yZWQtNjAwXCI+e2Vycm9ycy5leHBpcnl9PC9zcGFuPn1cbiAgICAgICAgPC9sYWJlbD5cbiAgICAgICAgPGxhYmVsIGNsYXNzTmFtZT1cImJsb2NrXCI+XG4gICAgICAgICAgPHNwYW4gY2xhc3NOYW1lPVwidGV4dC1zbSBmb250LXNlbWlib2xkIHRleHQtc2xhdGUtNzAwXCI+Q1ZWPC9zcGFuPlxuICAgICAgICAgIDxpbnB1dFxuICAgICAgICAgICAgdmFsdWU9e2NhcmQuY3Z2fVxuICAgICAgICAgICAgb25DaGFuZ2U9eyhldmVudCkgPT4gb25DaGFuZ2UoXCJjdnZcIiwgb25seURpZ2l0cyhldmVudC50YXJnZXQudmFsdWUpLnNsaWNlKDAsIDQpKX1cbiAgICAgICAgICAgIHBsYWNlaG9sZGVyPVwiMTIzXCJcbiAgICAgICAgICAgIGNsYXNzTmFtZT1cIm10LTIgaC0xMiB3LWZ1bGwgcm91bmRlZC1tZCBib3JkZXIgYm9yZGVyLXNsYXRlLTIwMCBweC00IG91dGxpbmUtbm9uZSBmb2N1czpib3JkZXItYnJhbmQtcHJpbWFyeVwiXG4gICAgICAgICAgLz5cbiAgICAgICAgICB7ZXJyb3JzLmN2diAmJiA8c3BhbiBjbGFzc05hbWU9XCJtdC0xIGJsb2NrIHRleHQteHMgZm9udC1tZWRpdW0gdGV4dC1yZWQtNjAwXCI+e2Vycm9ycy5jdnZ9PC9zcGFuPn1cbiAgICAgICAgPC9sYWJlbD5cbiAgICAgIDwvZGl2PlxuXG4gICAgICA8bGFiZWwgY2xhc3NOYW1lPVwiYmxvY2tcIj5cbiAgICAgICAgPHNwYW4gY2xhc3NOYW1lPVwidGV4dC1zbSBmb250LXNlbWlib2xkIHRleHQtc2xhdGUtNzAwXCI+Tm9tZSBpbXByZXNzbyBubyBjYXJ0YW88L3NwYW4+XG4gICAgICAgIDxpbnB1dFxuICAgICAgICAgIHZhbHVlPXtjYXJkLm5hbWV9XG4gICAgICAgICAgb25DaGFuZ2U9eyhldmVudCkgPT4gb25DaGFuZ2UoXCJuYW1lXCIsIGV2ZW50LnRhcmdldC52YWx1ZSl9XG4gICAgICAgICAgcGxhY2Vob2xkZXI9XCJDb21vIGFwYXJlY2Ugbm8gY2FydGFvXCJcbiAgICAgICAgICBjbGFzc05hbWU9XCJtdC0yIGgtMTIgdy1mdWxsIHJvdW5kZWQtbWQgYm9yZGVyIGJvcmRlci1zbGF0ZS0yMDAgcHgtNCBvdXRsaW5lLW5vbmUgZm9jdXM6Ym9yZGVyLWJyYW5kLXByaW1hcnlcIlxuICAgICAgICAvPlxuICAgICAgICB7ZXJyb3JzLm5hbWUgJiYgPHNwYW4gY2xhc3NOYW1lPVwibXQtMSBibG9jayB0ZXh0LXhzIGZvbnQtbWVkaXVtIHRleHQtcmVkLTYwMFwiPntlcnJvcnMubmFtZX08L3NwYW4+fVxuICAgICAgPC9sYWJlbD5cblxuICAgICAgPGxhYmVsIGNsYXNzTmFtZT1cImJsb2NrXCI+XG4gICAgICAgIDxzcGFuIGNsYXNzTmFtZT1cInRleHQtc20gZm9udC1zZW1pYm9sZCB0ZXh0LXNsYXRlLTcwMFwiPlBhcmNlbGFtZW50bzwvc3Bhbj5cbiAgICAgICAgPHNlbGVjdFxuICAgICAgICAgIHZhbHVlPXtjYXJkLmluc3RhbGxtZW50c31cbiAgICAgICAgICBvbkNoYW5nZT17KGV2ZW50KSA9PiBvbkNoYW5nZShcImluc3RhbGxtZW50c1wiLCBldmVudC50YXJnZXQudmFsdWUpfVxuICAgICAgICAgIGNsYXNzTmFtZT1cIm10LTIgaC0xMiB3LWZ1bGwgcm91bmRlZC1tZCBib3JkZXIgYm9yZGVyLXNsYXRlLTIwMCBiZy13aGl0ZSBweC00IG91dGxpbmUtbm9uZSBmb2N1czpib3JkZXItYnJhbmQtcHJpbWFyeVwiXG4gICAgICAgID5cbiAgICAgICAgICA8b3B0aW9uIHZhbHVlPVwiMVwiPjF4IHNlbSBqdXJvczwvb3B0aW9uPlxuICAgICAgICAgIDxvcHRpb24gdmFsdWU9XCIyXCI+Mnggc2VtIGp1cm9zPC9vcHRpb24+XG4gICAgICAgICAgPG9wdGlvbiB2YWx1ZT1cIjNcIj4zeCBzZW0ganVyb3M8L29wdGlvbj5cbiAgICAgICAgPC9zZWxlY3Q+XG4gICAgICA8L2xhYmVsPlxuICAgIDwvZGl2PlxuICApO1xufVxuIl0sImZpbGUiOiJDOi9kZXYvbWFzdGVydGlja2V0L2Zyb250LWVuZC9zcmMvY29tcG9uZW50cy9wYXltZW50L0NyZWRpdENhcmRGb3JtLmpzeCJ9

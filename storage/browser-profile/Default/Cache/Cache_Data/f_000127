@@ -1,0 +1,192 @@
+import { createHotContext as __vite__createHotContext } from "/@vite/client";import.meta.hot = __vite__createHotContext("/src/components/tickets/CheckoutDrawer.jsx");import __vite__cjsImport0_react_jsxDevRuntime from "/node_modules/.vite/deps/react_jsx-dev-runtime.js?v=9ee562b0"; const jsxDEV = __vite__cjsImport0_react_jsxDevRuntime["jsxDEV"];
+import { X } from "/node_modules/.vite/deps/lucide-react.js?v=9ee562b0";
+import { CHECKOUT_ROUTE, saveCheckoutPayload } from "/src/utils/checkoutStorage.js";
+import { formatMoney } from "/src/utils/formatters.js";
+export default function CheckoutDrawer({ open, payload, onClose }) {
+  if (!open) return null;
+  const handleGoToPayment = () => {
+    saveCheckoutPayload(payload);
+    window.location.href = CHECKOUT_ROUTE;
+  };
+  return /* @__PURE__ */ jsxDEV("div", { className: "fixed inset-0 z-40 bg-slate-950/45", children: /* @__PURE__ */ jsxDEV("aside", { className: "ml-auto flex h-full w-full max-w-md flex-col bg-white shadow-2xl", children: [
+    /* @__PURE__ */ jsxDEV("div", { className: "flex items-center justify-between border-b border-slate-200 p-5", children: [
+      /* @__PURE__ */ jsxDEV("div", { children: [
+        /* @__PURE__ */ jsxDEV("p", { className: "text-sm font-semibold text-brand-primary", children: "Resumo do pedido" }, void 0, false, {
+          fileName: "C:/dev/masterticket/front-end/src/components/tickets/CheckoutDrawer.jsx",
+          lineNumber: 18,
+          columnNumber: 13
+        }, this),
+        /* @__PURE__ */ jsxDEV("h2", { className: "text-xl font-bold text-slate-900", children: payload.event.artist }, void 0, false, {
+          fileName: "C:/dev/masterticket/front-end/src/components/tickets/CheckoutDrawer.jsx",
+          lineNumber: 19,
+          columnNumber: 13
+        }, this)
+      ] }, void 0, true, {
+        fileName: "C:/dev/masterticket/front-end/src/components/tickets/CheckoutDrawer.jsx",
+        lineNumber: 17,
+        columnNumber: 11
+      }, this),
+      /* @__PURE__ */ jsxDEV("button", { type: "button", onClick: onClose, className: "grid h-10 w-10 place-items-center rounded-md hover:bg-slate-100", "aria-label": "Fechar resumo", children: /* @__PURE__ */ jsxDEV(X, { size: 20 }, void 0, false, {
+        fileName: "C:/dev/masterticket/front-end/src/components/tickets/CheckoutDrawer.jsx",
+        lineNumber: 22,
+        columnNumber: 13
+      }, this) }, void 0, false, {
+        fileName: "C:/dev/masterticket/front-end/src/components/tickets/CheckoutDrawer.jsx",
+        lineNumber: 21,
+        columnNumber: 11
+      }, this)
+    ] }, void 0, true, {
+      fileName: "C:/dev/masterticket/front-end/src/components/tickets/CheckoutDrawer.jsx",
+      lineNumber: 16,
+      columnNumber: 9
+    }, this),
+    /* @__PURE__ */ jsxDEV("div", { className: "flex-1 overflow-y-auto p-5", children: payload.items.map(
+      (item) => /* @__PURE__ */ jsxDEV("div", { className: "border-b border-slate-200 py-4", children: [
+        /* @__PURE__ */ jsxDEV("p", { className: "font-semibold text-slate-900", children: item.ticket }, void 0, false, {
+          fileName: "C:/dev/masterticket/front-end/src/components/tickets/CheckoutDrawer.jsx",
+          lineNumber: 29,
+          columnNumber: 15
+        }, this),
+        /* @__PURE__ */ jsxDEV("p", { className: "mt-1 text-sm text-slate-500", children: [
+          item.quantity,
+          " x ",
+          formatMoney(item.unitPrice)
+        ] }, void 0, true, {
+          fileName: "C:/dev/masterticket/front-end/src/components/tickets/CheckoutDrawer.jsx",
+          lineNumber: 30,
+          columnNumber: 15
+        }, this),
+        /* @__PURE__ */ jsxDEV("p", { className: "mt-2 font-bold text-slate-900", children: formatMoney(item.subtotal) }, void 0, false, {
+          fileName: "C:/dev/masterticket/front-end/src/components/tickets/CheckoutDrawer.jsx",
+          lineNumber: 33,
+          columnNumber: 15
+        }, this)
+      ] }, item.ticketId, true, {
+        fileName: "C:/dev/masterticket/front-end/src/components/tickets/CheckoutDrawer.jsx",
+        lineNumber: 28,
+        columnNumber: 11
+      }, this)
+    ) }, void 0, false, {
+      fileName: "C:/dev/masterticket/front-end/src/components/tickets/CheckoutDrawer.jsx",
+      lineNumber: 26,
+      columnNumber: 9
+    }, this),
+    /* @__PURE__ */ jsxDEV("div", { className: "border-t border-slate-200 p-5", children: [
+      /* @__PURE__ */ jsxDEV("div", { className: "space-y-2 text-sm", children: [
+        /* @__PURE__ */ jsxDEV("div", { className: "flex justify-between text-slate-600", children: [
+          /* @__PURE__ */ jsxDEV("span", { children: "Ingressos" }, void 0, false, {
+            fileName: "C:/dev/masterticket/front-end/src/components/tickets/CheckoutDrawer.jsx",
+            lineNumber: 41,
+            columnNumber: 15
+          }, this),
+          /* @__PURE__ */ jsxDEV("span", { children: payload.totals.tickets }, void 0, false, {
+            fileName: "C:/dev/masterticket/front-end/src/components/tickets/CheckoutDrawer.jsx",
+            lineNumber: 42,
+            columnNumber: 15
+          }, this)
+        ] }, void 0, true, {
+          fileName: "C:/dev/masterticket/front-end/src/components/tickets/CheckoutDrawer.jsx",
+          lineNumber: 40,
+          columnNumber: 13
+        }, this),
+        /* @__PURE__ */ jsxDEV("div", { className: "flex justify-between text-slate-600", children: [
+          /* @__PURE__ */ jsxDEV("span", { children: "Subtotal" }, void 0, false, {
+            fileName: "C:/dev/masterticket/front-end/src/components/tickets/CheckoutDrawer.jsx",
+            lineNumber: 45,
+            columnNumber: 15
+          }, this),
+          /* @__PURE__ */ jsxDEV("span", { children: formatMoney(payload.totals.subtotal) }, void 0, false, {
+            fileName: "C:/dev/masterticket/front-end/src/components/tickets/CheckoutDrawer.jsx",
+            lineNumber: 46,
+            columnNumber: 15
+          }, this)
+        ] }, void 0, true, {
+          fileName: "C:/dev/masterticket/front-end/src/components/tickets/CheckoutDrawer.jsx",
+          lineNumber: 44,
+          columnNumber: 13
+        }, this),
+        /* @__PURE__ */ jsxDEV("div", { className: "flex justify-between text-slate-600", children: [
+          /* @__PURE__ */ jsxDEV("span", { children: "Taxas" }, void 0, false, {
+            fileName: "C:/dev/masterticket/front-end/src/components/tickets/CheckoutDrawer.jsx",
+            lineNumber: 49,
+            columnNumber: 15
+          }, this),
+          /* @__PURE__ */ jsxDEV("span", { children: formatMoney(payload.totals.serviceFee) }, void 0, false, {
+            fileName: "C:/dev/masterticket/front-end/src/components/tickets/CheckoutDrawer.jsx",
+            lineNumber: 50,
+            columnNumber: 15
+          }, this)
+        ] }, void 0, true, {
+          fileName: "C:/dev/masterticket/front-end/src/components/tickets/CheckoutDrawer.jsx",
+          lineNumber: 48,
+          columnNumber: 13
+        }, this),
+        /* @__PURE__ */ jsxDEV("div", { className: "flex justify-between pt-2 text-lg font-bold text-slate-900", children: [
+          /* @__PURE__ */ jsxDEV("span", { children: "Total" }, void 0, false, {
+            fileName: "C:/dev/masterticket/front-end/src/components/tickets/CheckoutDrawer.jsx",
+            lineNumber: 53,
+            columnNumber: 15
+          }, this),
+          /* @__PURE__ */ jsxDEV("span", { children: formatMoney(payload.totals.total) }, void 0, false, {
+            fileName: "C:/dev/masterticket/front-end/src/components/tickets/CheckoutDrawer.jsx",
+            lineNumber: 54,
+            columnNumber: 15
+          }, this)
+        ] }, void 0, true, {
+          fileName: "C:/dev/masterticket/front-end/src/components/tickets/CheckoutDrawer.jsx",
+          lineNumber: 52,
+          columnNumber: 13
+        }, this)
+      ] }, void 0, true, {
+        fileName: "C:/dev/masterticket/front-end/src/components/tickets/CheckoutDrawer.jsx",
+        lineNumber: 39,
+        columnNumber: 11
+      }, this),
+      /* @__PURE__ */ jsxDEV("button", { type: "button", onClick: handleGoToPayment, className: "mt-5 h-12 w-full rounded-md bg-brand-primary font-bold text-white hover:bg-brand-secondary", children: "Ir para pagamento" }, void 0, false, {
+        fileName: "C:/dev/masterticket/front-end/src/components/tickets/CheckoutDrawer.jsx",
+        lineNumber: 57,
+        columnNumber: 11
+      }, this)
+    ] }, void 0, true, {
+      fileName: "C:/dev/masterticket/front-end/src/components/tickets/CheckoutDrawer.jsx",
+      lineNumber: 38,
+      columnNumber: 9
+    }, this)
+  ] }, void 0, true, {
+    fileName: "C:/dev/masterticket/front-end/src/components/tickets/CheckoutDrawer.jsx",
+    lineNumber: 15,
+    columnNumber: 7
+  }, this) }, void 0, false, {
+    fileName: "C:/dev/masterticket/front-end/src/components/tickets/CheckoutDrawer.jsx",
+    lineNumber: 14,
+    columnNumber: 5
+  }, this);
+}
+_c = CheckoutDrawer;
+var _c;
+$RefreshReg$(_c, "CheckoutDrawer");
+import * as RefreshRuntime from "/@react-refresh";
+const inWebWorker = typeof WorkerGlobalScope !== "undefined" && self instanceof WorkerGlobalScope;
+if (import.meta.hot && !inWebWorker) {
+  if (!window.$RefreshReg$) {
+    throw new Error(
+      "@vitejs/plugin-react can't detect preamble. Something is wrong."
+    );
+  }
+  RefreshRuntime.__hmr_import(import.meta.url).then((currentExports) => {
+    RefreshRuntime.registerExportsForReactRefresh("C:/dev/masterticket/front-end/src/components/tickets/CheckoutDrawer.jsx", currentExports);
+    import.meta.hot.accept((nextExports) => {
+      if (!nextExports) return;
+      const invalidateMessage = RefreshRuntime.validateRefreshBoundaryAndEnqueueUpdate("C:/dev/masterticket/front-end/src/components/tickets/CheckoutDrawer.jsx", currentExports, nextExports);
+      if (invalidateMessage) import.meta.hot.invalidate(invalidateMessage);
+    });
+  });
+}
+function $RefreshReg$(type, id) {
+  return RefreshRuntime.register(type, "C:/dev/masterticket/front-end/src/components/tickets/CheckoutDrawer.jsx " + id);
+}
+function $RefreshSig$() {
+  return RefreshRuntime.createSignatureFunctionForTransform();
+}
+
+//# sourceMappingURL=data:application/json;base64,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QUFDLFNBQUksV0FBVSw4REFDYjtBQUFBLGlDQUFDLFVBQUsscUJBQU47QUFBQTtBQUFBO0FBQUE7QUFBQSxpQkFBVztBQUFBLFVBQ1gsdUJBQUMsVUFBTXJCLHNCQUFZRyxRQUFRZ0IsT0FBT0csS0FBSyxLQUF2QztBQUFBO0FBQUE7QUFBQTtBQUFBLGlCQUF5QztBQUFBLGFBRjNDO0FBQUE7QUFBQTtBQUFBO0FBQUEsZUFHQTtBQUFBLFdBaEJGO0FBQUE7QUFBQTtBQUFBO0FBQUEsYUFpQkE7QUFBQSxNQUNBLHVCQUFDLFlBQU8sTUFBSyxVQUFTLFNBQVNqQixtQkFBbUIsV0FBVSw4RkFBNEYsaUNBQXhKO0FBQUE7QUFBQTtBQUFBO0FBQUEsYUFFQTtBQUFBLFNBckJGO0FBQUE7QUFBQTtBQUFBO0FBQUEsV0FzQkE7QUFBQSxPQTdDRjtBQUFBO0FBQUE7QUFBQTtBQUFBLFNBOENBLEtBL0NGO0FBQUE7QUFBQTtBQUFBO0FBQUEsU0FnREE7QUFFSjtBQUFDa0IsS0EzRHVCdEI7QUFBYyxJQUFBc0I7QUFBQSxhQUFBQSxJQUFBIiwibmFtZXMiOlsiWCIsIkNIRUNLT1VUX1JPVVRFIiwic2F2ZUNoZWNrb3V0UGF5bG9hZCIsImZvcm1hdE1vbmV5IiwiQ2hlY2tvdXREcmF3ZXIiLCJvcGVuIiwicGF5bG9hZCIsIm9uQ2xvc2UiLCJoYW5kbGVHb1RvUGF5bWVudCIsIndpbmRvdyIsImxvY2F0aW9uIiwiaHJlZiIsImV2ZW50IiwiYXJ0aXN0IiwiaXRlbXMiLCJtYXAiLCJpdGVtIiwidGlja2V0IiwicXVhbnRpdHkiLCJ1bml0UHJpY2UiLCJzdWJ0b3RhbCIsInRpY2tldElkIiwidG90YWxzIiwidGlja2V0cyIsInNlcnZpY2VGZWUiLCJ0b3RhbCIsIl9jIl0sImlnbm9yZUxpc3QiOltdLCJzb3VyY2VzIjpbIkNoZWNrb3V0RHJhd2VyLmpzeCJdLCJzb3VyY2VzQ29udGVudCI6WyJpbXBvcnQgeyBYIH0gZnJvbSBcImx1Y2lkZS1yZWFjdFwiO1xuaW1wb3J0IHsgQ0hFQ0tPVVRfUk9VVEUsIHNhdmVDaGVja291dFBheWxvYWQgfSBmcm9tIFwiLi4vLi4vdXRpbHMvY2hlY2tvdXRTdG9yYWdlXCI7XG5pbXBvcnQgeyBmb3JtYXRNb25leSB9IGZyb20gXCIuLi8uLi91dGlscy9mb3JtYXR0ZXJzXCI7XG5cbmV4cG9ydCBkZWZhdWx0IGZ1bmN0aW9uIENoZWNrb3V0RHJhd2VyKHsgb3BlbiwgcGF5bG9hZCwgb25DbG9zZSB9KSB7XG4gIGlmICghb3BlbikgcmV0dXJuIG51bGw7XG5cbiAgY29uc3QgaGFuZGxlR29Ub1BheW1lbnQgPSAoKSA9PiB7XG4gICAgc2F2ZUNoZWNrb3V0UGF5bG9hZChwYXlsb2FkKTtcbiAgICB3aW5kb3cubG9jYXRpb24uaHJlZiA9IENIRUNLT1VUX1JPVVRFO1xuICB9O1xuXG4gIHJldHVybiAoXG4gICAgPGRpdiBjbGFzc05hbWU9XCJmaXhlZCBpbnNldC0wIHotNDAgYmctc2xhdGUtOTUwLzQ1XCI+XG4gICAgICA8YXNpZGUgY2xhc3NOYW1lPVwibWwtYXV0byBmbGV4IGgtZnVsbCB3LWZ1bGwgbWF4LXctbWQgZmxleC1jb2wgYmctd2hpdGUgc2hhZG93LTJ4bFwiPlxuICAgICAgICA8ZGl2IGNsYXNzTmFtZT1cImZsZXggaXRlbXMtY2VudGVyIGp1c3RpZnktYmV0d2VlbiBib3JkZXItYiBib3JkZXItc2xhdGUtMjAwIHAtNVwiPlxuICAgICAgICAgIDxkaXY+XG4gICAgICAgICAgICA8cCBjbGFzc05hbWU9XCJ0ZXh0LXNtIGZvbnQtc2VtaWJvbGQgdGV4dC1icmFuZC1wcmltYXJ5XCI+UmVzdW1vIGRvIHBlZGlkbzwvcD5cbiAgICAgICAgICAgIDxoMiBjbGFzc05hbWU9XCJ0ZXh0LXhsIGZvbnQtYm9sZCB0ZXh0LXNsYXRlLTkwMFwiPntwYXlsb2FkLmV2ZW50LmFydGlzdH08L2gyPlxuICAgICAgICAgIDwvZGl2PlxuICAgICAgICAgIDxidXR0b24gdHlwZT1cImJ1dHRvblwiIG9uQ2xpY2s9e29uQ2xvc2V9IGNsYXNzTmFtZT1cImdyaWQgaC0xMCB3LTEwIHBsYWNlLWl0ZW1zLWNlbnRlciByb3VuZGVkLW1kIGhvdmVyOmJnLXNsYXRlLTEwMFwiIGFyaWEtbGFiZWw9XCJGZWNoYXIgcmVzdW1vXCI+XG4gICAgICAgICAgICA8WCBzaXplPXsyMH0gLz5cbiAgICAgICAgICA8L2J1dHRvbj5cbiAgICAgICAgPC9kaXY+XG5cbiAgICAgICAgPGRpdiBjbGFzc05hbWU9XCJmbGV4LTEgb3ZlcmZsb3cteS1hdXRvIHAtNVwiPlxuICAgICAgICAgIHtwYXlsb2FkLml0ZW1zLm1hcCgoaXRlbSkgPT4gKFxuICAgICAgICAgICAgPGRpdiBrZXk9e2l0ZW0udGlja2V0SWR9IGNsYXNzTmFtZT1cImJvcmRlci1iIGJvcmRlci1zbGF0ZS0yMDAgcHktNFwiPlxuICAgICAgICAgICAgICA8cCBjbGFzc05hbWU9XCJmb250LXNlbWlib2xkIHRleHQtc2xhdGUtOTAwXCI+e2l0ZW0udGlja2V0fTwvcD5cbiAgICAgICAgICAgICAgPHAgY2xhc3NOYW1lPVwibXQtMSB0ZXh0LXNtIHRleHQtc2xhdGUtNTAwXCI+XG4gICAgICAgICAgICAgICAge2l0ZW0ucXVhbnRpdHl9IHgge2Zvcm1hdE1vbmV5KGl0ZW0udW5pdFByaWNlKX1cbiAgICAgICAgICAgICAgPC9wPlxuICAgICAgICAgICAgICA8cCBjbGFzc05hbWU9XCJtdC0yIGZvbnQtYm9sZCB0ZXh0LXNsYXRlLTkwMFwiPntmb3JtYXRNb25leShpdGVtLnN1YnRvdGFsKX08L3A+XG4gICAgICAgICAgICA8L2Rpdj5cbiAgICAgICAgICApKX1cbiAgICAgICAgPC9kaXY+XG5cbiAgICAgICAgPGRpdiBjbGFzc05hbWU9XCJib3JkZXItdCBib3JkZXItc2xhdGUtMjAwIHAtNVwiPlxuICAgICAgICAgIDxkaXYgY2xhc3NOYW1lPVwic3BhY2UteS0yIHRleHQtc21cIj5cbiAgICAgICAgICAgIDxkaXYgY2xhc3NOYW1lPVwiZmxleCBqdXN0aWZ5LWJldHdlZW4gdGV4dC1zbGF0ZS02MDBcIj5cbiAgICAgICAgICAgICAgPHNwYW4+SW5ncmVzc29zPC9zcGFuPlxuICAgICAgICAgICAgICA8c3Bhbj57cGF5bG9hZC50b3RhbHMudGlja2V0c308L3NwYW4+XG4gICAgICAgICAgICA8L2Rpdj5cbiAgICAgICAgICAgIDxkaXYgY2xhc3NOYW1lPVwiZmxleCBqdXN0aWZ5LWJldHdlZW4gdGV4dC1zbGF0ZS02MDBcIj5cbiAgICAgICAgICAgICAgPHNwYW4+U3VidG90YWw8L3NwYW4+XG4gICAgICAgICAgICAgIDxzcGFuPntmb3JtYXRNb25leShwYXlsb2FkLnRvdGFscy5zdWJ0b3RhbCl9PC9zcGFuPlxuICAgICAgICAgICAgPC9kaXY+XG4gICAgICAgICAgICA8ZGl2IGNsYXNzTmFtZT1cImZsZXgganVzdGlmeS1iZXR3ZWVuIHRleHQtc2xhdGUtNjAwXCI+XG4gICAgICAgICAgICAgIDxzcGFuPlRheGFzPC9zcGFuPlxuICAgICAgICAgICAgICA8c3Bhbj57Zm9ybWF0TW9uZXkocGF5bG9hZC50b3RhbHMuc2VydmljZUZlZSl9PC9zcGFuPlxuICAgICAgICAgICAgPC9kaXY+XG4gICAgICAgICAgICA8ZGl2IGNsYXNzTmFtZT1cImZsZXgganVzdGlmeS1iZXR3ZWVuIHB0LTIgdGV4dC1sZyBmb250LWJvbGQgdGV4dC1zbGF0ZS05MDBcIj5cbiAgICAgICAgICAgICAgPHNwYW4+VG90YWw8L3NwYW4+XG4gICAgICAgICAgICAgIDxzcGFuPntmb3JtYXRNb25leShwYXlsb2FkLnRvdGFscy50b3RhbCl9PC9zcGFuPlxuICAgICAgICAgICAgPC9kaXY+XG4gICAgICAgICAgPC9kaXY+XG4gICAgICAgICAgPGJ1dHRvbiB0eXBlPVwiYnV0dG9uXCIgb25DbGljaz17aGFuZGxlR29Ub1BheW1lbnR9IGNsYXNzTmFtZT1cIm10LTUgaC0xMiB3LWZ1bGwgcm91bmRlZC1tZCBiZy1icmFuZC1wcmltYXJ5IGZvbnQtYm9sZCB0ZXh0LXdoaXRlIGhvdmVyOmJnLWJyYW5kLXNlY29uZGFyeVwiPlxuICAgICAgICAgICAgSXIgcGFyYSBwYWdhbWVudG9cbiAgICAgICAgICA8L2J1dHRvbj5cbiAgICAgICAgPC9kaXY+XG4gICAgICA8L2FzaWRlPlxuICAgIDwvZGl2PlxuICApO1xufVxuIl0sImZpbGUiOiJDOi9kZXYvbWFzdGVydGlja2V0L2Zyb250LWVuZC9zcmMvY29tcG9uZW50cy90aWNrZXRzL0NoZWNrb3V0RHJhd2VyLmpzeCJ9

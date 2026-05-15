@@ -1,0 +1,4 @@
+2026/05/15-13:20:49.946 2708 Creating DB C:\dev\pw\storage\validate-user-data-dir\Default\Local Storage\leveldb since it was missing.
+2026/05/15-13:20:49.987 2708 Reusing MANIFEST C:\dev\pw\storage\validate-user-data-dir\Default\Local Storage\leveldb/MANIFEST-000001
+2026/05/15-13:21:10.881 2708 Level-0 table #5: started
+2026/05/15-13:21:10.898 2708 Level-0 table #5: 224220 bytes OK

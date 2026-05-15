@@ -1,0 +1,112 @@
+{
+  "url": "https://e66fun.com/#/sd-login",
+  "title": "E66 -Melhores máquinas caça-níqueis de cassino online",
+  "inputs": [
+    {
+      "index": 0,
+      "tag": "input",
+      "type": "text",
+      "name": null,
+      "id": null,
+      "className": "input login-item-input",
+      "placeholder": "Conta / Número de telefone",
+      "valueLength": 0,
+      "visibleText": null
+    },
+    {
+      "index": 1,
+      "tag": "input",
+      "type": "password",
+      "name": null,
+      "id": null,
+      "className": "input login-item-input",
+      "placeholder": "por favor, insira a senha",
+      "valueLength": 0,
+      "visibleText": null
+    },
+    {
+      "index": 2,
+      "tag": "input",
+      "type": "text",
+      "name": null,
+      "id": null,
+      "className": "input signup-item-input",
+      "placeholder": "Número de telefone",
+      "valueLength": 0,
+      "visibleText": null
+    },
+    {
+      "index": 3,
+      "tag": "input",
+      "type": "password",
+      "name": null,
+      "id": null,
+      "className": "input signup-item-input",
+      "placeholder": "por favor, insira a senha",
+      "valueLength": 0,
+      "visibleText": null
+    },
+    {
+      "index": 4,
+      "tag": "input",
+      "type": "password",
+      "name": null,
+      "id": null,
+      "className": "input signup-item-input",
+      "placeholder": "confirmar a senha digitada",
+      "valueLength": 0,
+      "visibleText": null
+    },
+    {
+      "index": 5,
+      "tag": "input",
+      "type": "hidden",
+      "name": "cf-turnstile-response",
+      "id": "cf-chl-widget-o0y5k_response",
+      "className": null,
+      "placeholder": null,
+      "valueLength": 0,
+      "visibleText": null
+    }
+  ],
+  "buttons": [
+    {
+      "index": 0,
+      "tag": "div",
+      "href": null,
+      "id": null,
+      "className": "signup-item-signup-disable",
+      "text": "Entrar"
+    },
+    {
+      "index": 1,
+      "tag": "div",
+      "href": null,
+      "id": null,
+      "className": "signup-item-signup-enable",
+      "text": "Entrar"
+    },
+    {
+      "index": 2,
+      "tag": "div",
+      "href": null,
+      "id": null,
+      "className": "signup-item-signup-disable",
+      "text": "Registro"
+    },
+    {
+      "index": 3,
+      "tag": "div",
+      "href": null,
+      "id": null,
+      "className": "signup-item-signup-enable",
+      "text": "Registro"
+    }
+  ],
+  "selectorCounts": {
+    "loginItemInput": 2,
+    "signupEnable": 2,
+    "signupDisable": 2,
+    "inputAmount": 0
+  }
+}

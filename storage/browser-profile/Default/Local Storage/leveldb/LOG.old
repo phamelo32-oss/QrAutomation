@@ -1,0 +1,6 @@
+2026/05/15-14:11:40.453 613c Reusing MANIFEST C:\dev\pw\storage\browser-profile\Default\Local Storage\leveldb/MANIFEST-000001
+2026/05/15-14:11:40.460 613c Recovering log #18
+2026/05/15-14:11:40.462 613c Reusing old log C:\dev\pw\storage\browser-profile\Default\Local Storage\leveldb/000018.log 
+2026/05/15-14:22:00.419 6668 Level-0 table #22: started
+2026/05/15-14:22:00.429 6668 Level-0 table #22: 215970 bytes OK
+2026/05/15-14:22:00.432 6668 Delete type=0 #18
