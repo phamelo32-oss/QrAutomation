@@ -6,14 +6,19 @@ let contextPromise: Promise<BrowserContext> | null = null;
 export async function getBrowserContext(): Promise<BrowserContext> {
   if (!contextPromise) {
     console.log(`[browser] launching persistent context at ${config.userDataDir}`);
-    contextPromise = chromium.launchPersistentContext(config.userDataDir, {
-      channel: config.browserChannel,
+    const launchOptions: Parameters<typeof chromium.launchPersistentContext>[1] = {
       headless: config.headless,
       locale: 'pt-BR',
       timezoneId: 'America/Sao_Paulo',
       viewport: null,
       args: ['--disable-blink-features=AutomationControlled'],
-    }).then((context) => {
+    };
+
+    if (config.browserChannel) {
+      launchOptions.channel = config.browserChannel;
+    }
+
+    contextPromise = chromium.launchPersistentContext(config.userDataDir, launchOptions).then((context) => {
       context.on('close', () => {
         contextPromise = null;
       });

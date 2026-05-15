@@ -1,6 +1,10 @@
 import { resolve } from 'node:path';
 
 const storageRoot = resolve('storage');
+const isRailway = Boolean(
+  process.env.RAILWAY_ENVIRONMENT || process.env.RAILWAY_PROJECT_ID || process.env.RAILWAY_SERVICE_ID,
+);
+const browserChannel = process.env.BROWSER_CHANNEL ?? (isRailway ? undefined : 'chrome');
 
 export const config = {
   baseUrl: 'https://e66fun.com/',
@@ -9,9 +13,9 @@ export const config = {
   port: 3000,
   username: '11910937039',
   password: 'Pedro95590',
-  headless: false,
+  headless: process.env.HEADLESS ? process.env.HEADLESS !== 'false' : isRailway,
   warmupOnStart: false,
-  browserChannel: 'chrome',
+  browserChannel: browserChannel as 'chrome' | undefined,
   storageRoot,
   userDataDir: resolve(storageRoot, 'browser-profile'),
   qrOutputDir: resolve(storageRoot, 'qr-codes'),
