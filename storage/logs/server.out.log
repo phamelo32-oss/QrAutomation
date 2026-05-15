@@ -1,0 +1,61 @@
+[server] listening on http://localhost:3000
+[server] POST /generate-topup received
+[server] generating top-up QR for amount 680
+[browser] launching persistent context at C:\dev\pw\storage\browser-profile
+[topup] ensuring authenticated session
+[auth] checking current session
+[auth] existing session is valid
+[topup] opening top-up route
+[topup] existing payment iframe detected, resetting top-up page
+[topup] waiting for amount input
+[topup] filling amount 680
+[topup] submitting top-up form
+[topup] QR captured from https://pix-n.transafe.co/PixPay.html?cid=expireAt%202026-05-15%2014%3A52%3A08&sid=P_260515XVFl4AKKhfe22mV5hIjw&amount=680&qrcode=00020101021226940014br.gov.bcb.pix2572qrcode.hyperwalletip.com.br%2Fdynamic%2F0f60e1dd-888c-449a-899e-c10255c745685204000053039865802BR5913MOVETECH%20LTDA6009Sao%20Paulo62070503%2A%2A%2A63042C01
+[server] top-up QR ready from https://pix-n.transafe.co/PixPay.html?cid=expireAt%202026-05-15%2014%3A52%3A08&sid=P_260515XVFl4AKKhfe22mV5hIjw&amount=680&qrcode=00020101021226940014br.gov.bcb.pix2572qrcode.hyperwalletip.com.br%2Fdynamic%2F0f60e1dd-888c-449a-899e-c10255c745685204000053039865802BR5913MOVETECH%20LTDA6009Sao%20Paulo62070503%2A%2A%2A63042C01
+[server] POST /generate-topup received
+[server] generating top-up QR for amount 340
+[topup] ensuring authenticated session
+[auth] checking current session
+[auth] existing session is valid
+[topup] opening top-up route
+[topup] existing payment iframe detected, resetting top-up page
+[topup] waiting for amount input
+[topup] filling amount 340
+[topup] submitting top-up form
+[topup] QR captured from https://res321.sdffrt.com/bbxli/i.html?o=N260515000001643133848754&timestamp=1778867063316&sign=9ea13d69279f736a5e986157eeac0856
+[server] top-up QR ready from https://res321.sdffrt.com/bbxli/i.html?o=N260515000001643133848754&timestamp=1778867063316&sign=9ea13d69279f736a5e986157eeac0856
+[server] POST /generate-topup received
+[server] generating top-up QR for amount 680
+[topup] ensuring authenticated session
+[auth] checking current session
+[auth] existing session is valid
+[topup] opening top-up route
+[topup] waiting for amount input
+[topup] filling amount 680
+[topup] submitting top-up form
+[topup] QR captured from https://pay-user.jbcy668.com/payApi/PayApi/CallBack/1_7b15ee3cda5a0e2266a04587ff2055b3
+[server] top-up QR ready from https://pay-user.jbcy668.com/payApi/PayApi/CallBack/1_7b15ee3cda5a0e2266a04587ff2055b3
+[server] POST /generate-topup received
+[server] generating top-up QR for amount 680
+[topup] ensuring authenticated session
+[auth] checking current session
+[auth] existing session is valid
+[topup] opening top-up route
+[topup] existing payment iframe detected, resetting top-up page
+[topup] waiting for amount input
+[topup] filling amount 680
+[topup] submitting top-up form
+[topup] QR captured from https://pay.kppaybr.com/pay/index/code.html?orderId=310516020057371
+[server] top-up QR ready from https://pay.kppaybr.com/pay/index/code.html?orderId=310516020057371
+[server] POST /generate-topup received
+[server] generating top-up QR for amount 680
+[topup] ensuring authenticated session
+[auth] checking current session
+[auth] existing session is valid
+[topup] opening top-up route
+[topup] existing payment iframe detected, resetting top-up page
+[topup] waiting for amount input
+[topup] filling amount 680
+[topup] submitting top-up form
+[topup] QR captured from https://pay-user.jbcy668.com/payApi/PayApi/CallBack/1_8aad57919e2b865095b7e942db108075
+[server] top-up QR ready from https://pay-user.jbcy668.com/payApi/PayApi/CallBack/1_8aad57919e2b865095b7e942db108075
